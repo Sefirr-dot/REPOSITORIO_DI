@@ -1,0 +1,14 @@
+C:\Users\Alumno\Desktop\Interfaces\PROYECTOS\Proyecto1.1\bin\Debug\net8.0\Proyecto1.1.exe
+C:\Users\Alumno\Desktop\Interfaces\PROYECTOS\Proyecto1.1\bin\Debug\net8.0\Proyecto1.1.deps.json
+C:\Users\Alumno\Desktop\Interfaces\PROYECTOS\Proyecto1.1\bin\Debug\net8.0\Proyecto1.1.runtimeconfig.json
+C:\Users\Alumno\Desktop\Interfaces\PROYECTOS\Proyecto1.1\bin\Debug\net8.0\Proyecto1.1.dll
+C:\Users\Alumno\Desktop\Interfaces\PROYECTOS\Proyecto1.1\bin\Debug\net8.0\Proyecto1.1.pdb
+C:\Users\Alumno\Desktop\Interfaces\PROYECTOS\Proyecto1.1\obj\Debug\net8.0\Proyecto1.1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alumno\Desktop\Interfaces\PROYECTOS\Proyecto1.1\obj\Debug\net8.0\Proyecto1.1.AssemblyInfoInputs.cache
+C:\Users\Alumno\Desktop\Interfaces\PROYECTOS\Proyecto1.1\obj\Debug\net8.0\Proyecto1.1.AssemblyInfo.cs
+C:\Users\Alumno\Desktop\Interfaces\PROYECTOS\Proyecto1.1\obj\Debug\net8.0\Proyecto1.1.csproj.CoreCompileInputs.cache
+C:\Users\Alumno\Desktop\Interfaces\PROYECTOS\Proyecto1.1\obj\Debug\net8.0\Proyecto1.1.dll
+C:\Users\Alumno\Desktop\Interfaces\PROYECTOS\Proyecto1.1\obj\Debug\net8.0\refint\Proyecto1.1.dll
+C:\Users\Alumno\Desktop\Interfaces\PROYECTOS\Proyecto1.1\obj\Debug\net8.0\Proyecto1.1.pdb
+C:\Users\Alumno\Desktop\Interfaces\PROYECTOS\Proyecto1.1\obj\Debug\net8.0\Proyecto1.1.genruntimeconfig.cache
+C:\Users\Alumno\Desktop\Interfaces\PROYECTOS\Proyecto1.1\obj\Debug\net8.0\ref\Proyecto1.1.dll
