@@ -1,0 +1,14 @@
+﻿<Window x:Class="WpfApp2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <ComboBox x:Name="combitoBoxi" HorizontalAlignment="Left" Margin="61,100,0,0" VerticalAlignment="Top" Width="689" SelectionChanged="ComboBox_SelectionChanged" Height="85"/>
+        <Label x:Name="NombreLabel" Content="&#xD;&#xA;" HorizontalAlignment="Left" Margin="97,240,0,0" VerticalAlignment="Top" Height="89" Width="263"/>
+        <Label x:Name="ApellidoLabel" Content="&#xA;" HorizontalAlignment="Left" Margin="456,240,0,0" VerticalAlignment="Top" Height="89" Width="263"/>
+    </Grid>
+</Window>
