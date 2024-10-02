@@ -9,6 +9,6 @@
     <Grid>
         <ComboBox x:Name="combitoBoxi" HorizontalAlignment="Left" Margin="61,100,0,0" VerticalAlignment="Top" Width="689" SelectionChanged="ComboBox_SelectionChanged" Height="85"/>
         <Label x:Name="NombreLabel" Content="&#xD;&#xA;" HorizontalAlignment="Left" Margin="97,240,0,0" VerticalAlignment="Top" Height="89" Width="263"/>
-        <Label x:Name="ApellidoLabel" Content="&#xA;" HorizontalAlignment="Left" Margin="456,240,0,0" VerticalAlignment="Top" Height="89" Width="263"/>
+        <Label x:Name="ApellidoLabel" Content="&#xA;" HorizontalAlignment="Left" Margin="456,240,0,0" VerticalAlignment="Top" Height="89" Width="263" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
     </Grid>
 </Window>

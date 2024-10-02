@@ -1,0 +1,22 @@
+﻿<Window x:Class="WpfApp3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp3"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <ComboBox x:Name="comboBox1" ItemsSource="{Binding Strings}" HorizontalAlignment="Left" Margin="209,202,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="ComboBox_SelectionChanged"/>
+        <TextBox x:Name="txBox" HorizontalAlignment="Left" Margin="60,204,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="txBox_TextChanged" Height="20" Text="1.0"/>
+        <ComboBox x:Name="comboBox2" ItemsSource="{Binding Strings}" HorizontalAlignment="Left" Margin="402,202,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="comboBox2_SelectionChanged"/>
+        <Label x:Name="labelFinal" Content="" HorizontalAlignment="Left" Margin="596,186,0,0" VerticalAlignment="Top" Height="53" Width="78" RenderTransformOrigin="0.469,0.524" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label Content="CONVERSOR DE PESOS " HorizontalAlignment="Left" Margin="111,56,0,0" VerticalAlignment="Top" Height="101" Width="563" FontSize="48">
+            <Label.Effect>
+                <DropShadowEffect/>
+            </Label.Effect>
+        </Label>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="60,316,0,0" VerticalAlignment="Top" Click="Button_Click"/>
+
+    </Grid>
+</Window>
