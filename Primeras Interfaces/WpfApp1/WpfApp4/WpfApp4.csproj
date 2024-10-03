@@ -8,4 +8,12 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="png-clipart-pizza-hut-italian-cuisine-take-out-restaurant-pizza-pizza-pie-food-pizza-logo-thumbnail.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="png-clipart-pizza-hut-italian-cuisine-take-out-restaurant-pizza-pizza-pie-food-pizza-logo-thumbnail.png" />
+  </ItemGroup>
+
 </Project>

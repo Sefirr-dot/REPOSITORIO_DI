@@ -6,10 +6,28 @@
         xmlns:local="clr-namespace:WpfApp4"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        <TextBlock HorizontalAlignment="Left" Margin="242,124,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
-        <TextBox x:Name="txboxi" HorizontalAlignment="Center" Margin="0,234,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" TextChanged="txboxi_TextChanged"/>
-        <Label x:Name="txboxi1" Content="{Binding ElementName=txboxi, Path=Text}" HorizontalAlignment="Center" Margin="0,177,0,0" VerticalAlignment="Top"/>
+    <Grid Opacity="0.995">
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black"/>
+                <GradientStop Color="#FFA0FF93" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <TextBlock HorizontalAlignment="Left" Margin="53,169,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Language="es-es" Text="Peso"/><LineBreak/><Run Language="es-es"/></TextBlock>
+        <TextBox x:Name="txtPeso" HorizontalAlignment="Left" Margin="140,169,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="txboxi_TextChanged"/>
+        <Label x:Name="txboxi1" Content="Altura&#xD;&#xA;" HorizontalAlignment="Left" Margin="410,164,0,0" VerticalAlignment="Top" Height="23" Width="51"/>
+        <TextBox x:Name="txtAltura" HorizontalAlignment="Left" Margin="485,169,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="txtAltura_TextChanged"/>
+        <TextBlock HorizontalAlignment="Left" Margin="53,247,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Language="es-es" Text="IMC:"/><LineBreak/><Run Language="es-es"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="54,304,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="INDICE"/><Run Language="es-es" Text=":"/><LineBreak/><Run Language="es-es"/><LineBreak/><Run/></TextBlock>
+        <Label x:Name="labelIMC" Content="" HorizontalAlignment="Left" Margin="82,242,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.158,-0.298" Height="42" Width="110"/>
+        <Label x:Name="labelIndice" Content="" HorizontalAlignment="Left" Margin="99,297,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.158,-0.298" Height="61" Width="161"/>
+        <Button x:Name="btCalcular" Content="Calcular" HorizontalAlignment="Left" Margin="46,217,0,0" VerticalAlignment="Top" Click="btCalcular_Click" Height="20"/>
+        <TextBlock HorizontalAlignment="Left" Margin="46,29,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="72" Width="610" FontSize="48" Foreground="#FF1300FF">
+            <TextBlock.Effect>
+                <DropShadowEffect/>
+            </TextBlock.Effect><Run Text="C"/><Run Language="es-es" Text="A"/><Run Text="LCULADORA IMC"/></TextBlock>
+        <ComboBox x:Name="combitoBox" ItemsSource="{Binding list}" HorizontalAlignment="Left" Margin="280,167,0,0" VerticalAlignment="Top" Width="120"/>
+        <ComboBox x:Name="combitoBox2" HorizontalAlignment="Left" ItemsSource="{Binding list2}" Margin="633,169,0,0" VerticalAlignment="Top" Width="120"/>
 
     </Grid>
 </Window>
