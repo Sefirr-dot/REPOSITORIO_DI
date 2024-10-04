@@ -1,0 +1,51 @@
+﻿<Window x:Class="WpfApp7.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp7"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBox x:Name="tbNumeroSugerido" HorizontalAlignment="Left" Margin="126,90,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBlock x:Name="txtNumero" HorizontalAlignment="Left" Margin="75,90,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Language="es-es" Text="Numero:"/></TextBlock>
+        <Label x:Name="labelAcierto" Content="&#xD;&#xA;" HorizontalAlignment="Left" Margin="75,125,0,0" VerticalAlignment="Top" Width="171"/>
+        <Button x:Name="btAdivinar" Content="Adivinar" HorizontalAlignment="Left" Margin="276,83,0,0" VerticalAlignment="Top" Height="31" Width="65" Click="btAdivinar_Click"/>
+        <Button x:Name="btFacil" Content="Facil" HorizontalAlignment="Left" Margin="606,62,0,0" VerticalAlignment="Top" Height="36" Width="123" Click="Button_Click_1"/>
+        <Button x:Name="btDificil" Content="Dificil" HorizontalAlignment="Left" Margin="606,110,0,0" VerticalAlignment="Top" Height="36" Width="123" Click="Button_Click"/>
+        <Image x:Name="cruz3" Margin="596,301,106,33" Source="/Emblema_Cruz_Roja.jpg" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="44.814"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="tick_1" Margin="431,312,299,40" Source="/istockphoto-1204658131-612x612.jpg" Stretch="Fill"/>
+        <Image x:Name="tick_2" Margin="519,312,211,40" Source="/istockphoto-1204658131-612x612.jpg" Stretch="Fill"/>
+        <Image x:Name="tick_3" Margin="606,312,124,40" Source="/istockphoto-1204658131-612x612.jpg" Stretch="Fill"/>
+        <Image x:Name="cruz2" Margin="504,303,198,31" Source="/Emblema_Cruz_Roja.jpg" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="44.814"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="cruz1" Margin="408,304,294,30" Source="/Emblema_Cruz_Roja.jpg" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="44.814"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image HorizontalAlignment="Left" Height="100" Margin="126,312,0,0" VerticalAlignment="Top" Width="100"/>
+    </Grid>
+</Window>
