@@ -1,0 +1,36 @@
+﻿<Window x:Class="WpfApp8.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp8"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="381" Width="481">
+    <Grid>
+        <TextBox HorizontalAlignment="Left" Margin="172,26,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="268"/>
+        <TextBox HorizontalAlignment="Left" Margin="172,72,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="64"/>
+        <TextBlock HorizontalAlignment="Left" Margin="29,26,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="138" Text="Nombre completo"/>
+        <TextBlock HorizontalAlignment="Left" Margin="29,73,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="138" Text="Nombre completo"/>
+        <TextBlock HorizontalAlignment="Left" Margin="29,113,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="138"><Run Language="es-es" Text="Sexo"/><LineBreak/><Run Language="es-es"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="29,155,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="138"><Run Language="es-es" Text="Curso"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="29,198,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="138"><Run Language="es-es" Text="Horario"/></TextBlock>
+        <RadioButton Content="RadioButton" HorizontalAlignment="Left" Margin="172,113,0,0" VerticalAlignment="Top"/>
+        <RadioButton Content="RadioButton" HorizontalAlignment="Left" Margin="277,113,0,0" VerticalAlignment="Top"/>
+        <ComboBox HorizontalAlignment="Left" Margin="167,152,0,0" VerticalAlignment="Top" Width="273">
+            <ComboBoxItem Content="DAM"/>
+            <ComboBoxItem Content="DAW"/>
+            <ComboBoxItem Content="ASIR"/>
+        </ComboBox>
+        <ComboBox HorizontalAlignment="Left" Margin="167,195,0,0" VerticalAlignment="Top" Width="273">
+            <ComboBoxItem Content="Mañanas"/>
+            <ComboBoxItem Content="Tardes"/>
+            <RadioButton Content="Nocturno"/>
+        </ComboBox>
+        <CheckBox Content="T.I" HorizontalAlignment="Left" Margin="29,258,0,0" VerticalAlignment="Top" Checked="CheckBox_Checked"/>
+        <CheckBox Content="Otro Documento:" HorizontalAlignment="Left" Margin="98,258,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Margin="225,257,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="215"/>
+        <Button Content="Registrar" HorizontalAlignment="Left" Margin="98,316,0,0" VerticalAlignment="Top" Width="95" Click="Button_Click"/>
+        <Button Content="Salir" HorizontalAlignment="Left" Margin="285,316,0,0" VerticalAlignment="Top" Width="95" Click="Button_Click"/>
+
+    </Grid>
+</Window>
