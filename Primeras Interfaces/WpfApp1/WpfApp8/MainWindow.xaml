@@ -7,30 +7,34 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="381" Width="481">
     <Grid>
-        <TextBox HorizontalAlignment="Left" Margin="172,26,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="268"/>
-        <TextBox HorizontalAlignment="Left" Margin="172,72,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="64"/>
-        <TextBlock HorizontalAlignment="Left" Margin="29,26,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="138" Text="Nombre completo"/>
-        <TextBlock HorizontalAlignment="Left" Margin="29,73,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="138" Text="Nombre completo"/>
-        <TextBlock HorizontalAlignment="Left" Margin="29,113,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="138"><Run Language="es-es" Text="Sexo"/><LineBreak/><Run Language="es-es"/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" Margin="29,155,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="138"><Run Language="es-es" Text="Curso"/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" Margin="29,198,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="138"><Run Language="es-es" Text="Horario"/></TextBlock>
-        <RadioButton Content="RadioButton" HorizontalAlignment="Left" Margin="172,113,0,0" VerticalAlignment="Top"/>
-        <RadioButton Content="RadioButton" HorizontalAlignment="Left" Margin="277,113,0,0" VerticalAlignment="Top"/>
-        <ComboBox HorizontalAlignment="Left" Margin="167,152,0,0" VerticalAlignment="Top" Width="273">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="364*"/>
+        </Grid.RowDefinitions>
+        <TextBox HorizontalAlignment="Left" Margin="172,11,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="268" Height="18" Grid.Row="1"/>
+        <TextBox HorizontalAlignment="Left" Margin="172,42,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="64" Grid.Row="1" Height="18"/>
+        <TextBlock HorizontalAlignment="Left" Margin="29,11,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="138" Text="Nombre completo" Height="16" Grid.Row="1"/>
+        <TextBlock HorizontalAlignment="Left" Margin="29,43,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="138" Text="Nombre completo" Grid.Row="1" Height="16"/>
+        <TextBlock HorizontalAlignment="Left" Margin="29,83,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="138" Grid.Row="1" Height="32"><Run Language="es-es" Text="Sexo"/><LineBreak/><Run Language="es-es"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="29,125,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="138" Grid.Row="1" Height="16"><Run Language="es-es" Text="Curso"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="29,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Width="138" Grid.Row="1" Height="16"><Run Language="es-es" Text="Horario"/></TextBlock>
+        <RadioButton Content="RadioButton" HorizontalAlignment="Left" Margin="172,83,0,0" VerticalAlignment="Top" Grid.Row="1" Height="15" Width="85"/>
+        <RadioButton Content="RadioButton" HorizontalAlignment="Left" Margin="277,83,0,0" VerticalAlignment="Top" Grid.Row="1" Height="15" Width="85"/>
+        <ComboBox HorizontalAlignment="Left" Margin="167,122,0,0" VerticalAlignment="Top" Width="273" Grid.Row="1" Height="22">
             <ComboBoxItem Content="DAM"/>
             <ComboBoxItem Content="DAW"/>
             <ComboBoxItem Content="ASIR"/>
         </ComboBox>
-        <ComboBox HorizontalAlignment="Left" Margin="167,195,0,0" VerticalAlignment="Top" Width="273">
+        <ComboBox HorizontalAlignment="Left" Margin="167,0,0,0" VerticalAlignment="Center" Width="273" Grid.Row="1" Height="22">
             <ComboBoxItem Content="Mañanas"/>
             <ComboBoxItem Content="Tardes"/>
             <RadioButton Content="Nocturno"/>
         </ComboBox>
-        <CheckBox Content="T.I" HorizontalAlignment="Left" Margin="29,258,0,0" VerticalAlignment="Top" Checked="CheckBox_Checked"/>
-        <CheckBox Content="Otro Documento:" HorizontalAlignment="Left" Margin="98,258,0,0" VerticalAlignment="Top"/>
-        <TextBox HorizontalAlignment="Left" Margin="225,257,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="215"/>
-        <Button Content="Registrar" HorizontalAlignment="Left" Margin="98,316,0,0" VerticalAlignment="Top" Width="95" Click="Button_Click"/>
-        <Button Content="Salir" HorizontalAlignment="Left" Margin="285,316,0,0" VerticalAlignment="Top" Width="95" Click="Button_Click"/>
+        <CheckBox Content="T.I" HorizontalAlignment="Left" Margin="29,228,0,0" VerticalAlignment="Top" Checked="CheckBox_Checked" Grid.Row="1" Height="15" Width="32"/>
+        <CheckBox Content="Otro Documento:" HorizontalAlignment="Left" Margin="98,228,0,0" VerticalAlignment="Top" Grid.Row="1" Height="15" Width="112"/>
+        <TextBox HorizontalAlignment="Left" Margin="225,227,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="215" Grid.Row="1" Height="18"/>
+        <Button Content="Registrar" HorizontalAlignment="Left" Margin="98,286,0,0" VerticalAlignment="Top" Width="95" Click="Button_Click" Grid.Row="1" Height="20"/>
+        <Button Content="Salir" HorizontalAlignment="Left" Margin="285,286,0,0" VerticalAlignment="Top" Width="95" Click="Button_Click" Grid.Row="1" Height="20"/>
 
     </Grid>
 </Window>
