@@ -1,0 +1,20 @@
+﻿<Window x:Class="WpfApp13.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp13"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Name="gridd">
+
+        <Canvas Name="canva">
+            <Ellipse Panel.ZIndex="2" Fill="Gainsboro" Canvas.Left="300" Canvas.Top="125" Height="200" Width="200" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <Ellipse Panel.ZIndex="2" Fill="Red" Canvas.Left="340" Canvas.Top="170" Height="30" Width="30"/>
+            <Ellipse Panel.ZIndex="2" Fill="White" Canvas.Left="350" Canvas.Top="180" Height="10" Width="10"/>
+            <Ellipse Panel.ZIndex="2" Fill="Red" Canvas.Left="415" Canvas.Top="170" Height="30" Width="30"/>
+            <Ellipse Panel.ZIndex="2" Fill="White" Canvas.Left="425" Canvas.Top="180" Height="10" Width="10"/>
+            <Rectangle Panel.ZIndex="2" Fill="Black" Canvas.Left="350" Canvas.Top="250" Height="30" Width="90"/>
+        </Canvas>
+    </Grid>
+</Window>
