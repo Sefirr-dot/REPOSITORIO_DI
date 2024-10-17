@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\Alumno\\Desktop\\Interfaces\\REPOSITORIO_DI\\Primeras Interfaces\\WpfApp1\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FC0341-3FF4-4D9D-A842-BC155422464C}|WpfApp17\\WpfApp17.csproj|c:\\users\\alumno\\desktop\\interfaces\\repositorio_di\\primeras interfaces\\wpfapp1\\wpfapp17\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A2FC0341-3FF4-4D9D-A842-BC155422464C}|WpfApp17\\WpfApp17.csproj|solutionrelative:wpfapp17\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FC0341-3FF4-4D9D-A842-BC155422464C}|WpfApp17\\WpfApp17.csproj|c:\\users\\alumno\\desktop\\interfaces\\repositorio_di\\primeras interfaces\\wpfapp1\\wpfapp17\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FC0341-3FF4-4D9D-A842-BC155422464C}|WpfApp17\\WpfApp17.csproj|solutionrelative:wpfapp17\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{14F5735E-A87F-4C5E-B61C-770209E29AA5}|WpfApp16\\WpfApp16.csproj|c:\\users\\alumno\\desktop\\interfaces\\repositorio_di\\primeras interfaces\\wpfapp1\\wpfapp16\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{14F5735E-A87F-4C5E-B61C-770209E29AA5}|WpfApp16\\WpfApp16.csproj|solutionrelative:wpfapp16\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -38,11 +46,36 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\Alumno\\Desktop\\Interfaces\\REPOSITORIO_DI\\Primeras Interfaces\\WpfApp1\\WpfApp17\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "WpfApp17\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\Alumno\\Desktop\\Interfaces\\REPOSITORIO_DI\\Primeras Interfaces\\WpfApp1\\WpfApp17\\MainWindow.xaml",
+              "RelativeToolTip": "WpfApp17\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-10-17T13:58:42.351Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Alumno\\Desktop\\Interfaces\\REPOSITORIO_DI\\Primeras Interfaces\\WpfApp1\\WpfApp17\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "WpfApp17\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\Alumno\\Desktop\\Interfaces\\REPOSITORIO_DI\\Primeras Interfaces\\WpfApp1\\WpfApp17\\MainWindow.xaml.cs",
+              "RelativeToolTip": "WpfApp17\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T13:58:41.839Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Persona.cs",
               "DocumentMoniker": "C:\\Users\\Alumno\\Desktop\\Interfaces\\REPOSITORIO_DI\\Primeras Interfaces\\WpfApp1\\WpfApp16\\Persona.cs",
               "RelativeDocumentMoniker": "WpfApp16\\Persona.cs",
@@ -50,49 +83,46 @@
               "RelativeToolTip": "WpfApp16\\Persona.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T15:49:18.258Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-16T15:49:18.258Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\Alumno\\Desktop\\Interfaces\\REPOSITORIO_DI\\Primeras Interfaces\\WpfApp1\\WpfApp16\\MainWindow.xaml",
               "RelativeDocumentMoniker": "WpfApp16\\MainWindow.xaml",
               "ToolTip": "C:\\Users\\Alumno\\Desktop\\Interfaces\\REPOSITORIO_DI\\Primeras Interfaces\\WpfApp1\\WpfApp16\\MainWindow.xaml",
               "RelativeToolTip": "WpfApp16\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-10-16T14:50:45.849Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-16T14:50:45.849Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Alumno\\Desktop\\Interfaces\\REPOSITORIO_DI\\Primeras Interfaces\\WpfApp1\\WpfApp16\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "WpfApp16\\MainWindow.xaml.cs",
               "ToolTip": "C:\\Users\\Alumno\\Desktop\\Interfaces\\REPOSITORIO_DI\\Primeras Interfaces\\WpfApp1\\WpfApp16\\MainWindow.xaml.cs",
               "RelativeToolTip": "WpfApp16\\MainWindow.xaml.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAADMAAAAtAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAAqwDMAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-16T14:50:45.345Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\Alumno\\Desktop\\Interfaces\\REPOSITORIO_DI\\Primeras Interfaces\\WpfApp1\\WpfApp15\\MainWindow.xaml",
               "RelativeDocumentMoniker": "WpfApp15\\MainWindow.xaml",
               "ToolTip": "C:\\Users\\Alumno\\Desktop\\Interfaces\\REPOSITORIO_DI\\Primeras Interfaces\\WpfApp1\\WpfApp15\\MainWindow.xaml",
               "RelativeToolTip": "WpfApp15\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-10-15T18:40:32.407Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-15T18:40:32.407Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Alumno\\Desktop\\Interfaces\\REPOSITORIO_DI\\Primeras Interfaces\\WpfApp1\\WpfApp15\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "WpfApp15\\MainWindow.xaml.cs",
@@ -100,12 +130,11 @@
               "RelativeToolTip": "WpfApp15\\MainWindow.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T18:40:31.835Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-15T18:40:31.835Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\Alumno\\Desktop\\Interfaces\\REPOSITORIO_DI\\Primeras Interfaces\\WpfApp1\\WpfApp14\\MainWindow.xaml",
               "RelativeDocumentMoniker": "WpfApp14\\MainWindow.xaml",
@@ -116,7 +145,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Alumno\\Desktop\\Interfaces\\REPOSITORIO_DI\\Primeras Interfaces\\WpfApp1\\WpfApp14\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "WpfApp14\\MainWindow.xaml.cs",
@@ -124,8 +153,7 @@
               "RelativeToolTip": "WpfApp14\\MainWindow.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-14T18:50:57.469Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-14T18:50:57.469Z"
             }
           ]
         }

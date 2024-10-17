@@ -1,0 +1,16 @@
+﻿<Window x:Class="WpfApp17.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp17"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Slider Name="MiSlide" HorizontalAlignment="Left"/>
+        <TextBlock Name ="Ejeplo" FontSize="{Binding ElementName=MiSlide, Path=Value,Mode=TwoWay}" Foreground="{Binding ElementName=LstVolores, Path=SelectedItem.COntent}"
+                   FontFamily="{Binding ElementName=LstFuentes, Path=SelectedItem}" HorizontalAlignment="Left" Margin="10 73 0 0 " TextWrapping="Wrap" Text="Esto es un ejemplo de Binding"
+                   VerticalAlignment="Top" Height="58" Width="498" FontWeight="Bold"/>
+
+    </Grid>
+</Window>
