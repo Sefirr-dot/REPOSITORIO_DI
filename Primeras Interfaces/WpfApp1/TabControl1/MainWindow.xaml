@@ -1,0 +1,40 @@
+﻿<Window x:Class="TabControl1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TabControl1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="414" Width="807">
+    <Grid>
+
+        <TabControl TabStripPlacement="Top">
+            <TabItem Header="Personas">
+                <StackPanel  Margin="0,0,2,0">
+                    <DataGrid Name="datGrid1" AutoGenerateColumns="False" Margin="10" ItemsSource="{Binding Path=listaPersonas}"  SelectionChanged="datGrid1_SelectionChanged">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="Nombre" Binding="{Binding Nombre}" Width="*"/>
+                            <DataGridTextColumn Header="Apellidos" Binding="{Binding Apellidos}"  Width="*"/>
+                            <DataGridTextColumn Header="Edad" Binding="{Binding Edad}"  Width="*"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                    <Button x:Name="btEliminar" Content="Eliminar" Width="80" Click="btEliminar_Click" />
+                </StackPanel>
+
+            </TabItem>
+            <TabItem Header="Añadir Persona">
+                <StackPanel>
+                    <TextBlock HorizontalAlignment="Left" Margin="10" TextWrapping="Wrap" VerticalAlignment="Top"><Run Language="es-es" Text="Nombre"/></TextBlock>
+                    <TextBox x:Name="txBoxName" HorizontalAlignment="Left" Margin="10" TextWrapping="Wrap" VerticalAlignment="Top" Width="639"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="10" TextWrapping="Wrap" VerticalAlignment="Top"><Run Language="es-es" Text="Apelllidos"/></TextBlock>
+                    <TextBox x:Name="txBoxApellido" HorizontalAlignment="Left" Margin="10" TextWrapping="Wrap" VerticalAlignment="Top" Width="639"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="10" TextWrapping="Wrap" VerticalAlignment="Top"><Run Language="es-es" Text="Edad"/></TextBlock>
+                    <TextBox x:Name="txBoxEDAD" HorizontalAlignment="Left" Margin="10" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="639"/>
+
+                    <Button x:Name="btAgregar" Content="Agregar" HorizontalAlignment="Center" Margin="10" VerticalAlignment="Top" Height="52" Width="176" Click="btAgregar_Click"/>
+                </StackPanel>
+            </TabItem>
+        </TabControl>
+
+    </Grid>
+</Window>

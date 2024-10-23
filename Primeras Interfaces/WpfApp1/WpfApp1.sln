@@ -37,7 +37,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfApp16", "WpfApp16\WpfApp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfApp17", "WpfApp17\WpfApp17.csproj", "{A2FC0341-3FF4-4D9D-A842-BC155422464C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApp18", "WpfApp18\WpfApp18.csproj", "{32BC95C9-BE12-4CDB-AC97-E2BAC67A503C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfApp18", "WpfApp18\WpfApp18.csproj", "{32BC95C9-BE12-4CDB-AC97-E2BAC67A503C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataGrid", "DataGrid\DataGrid.csproj", "{BB19E061-9C7C-4B39-9E8E-39C032653A1B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ventanas", "Ventanas\Ventanas.csproj", "{7697DB40-B14D-4C96-AACF-C6B6444C5A4A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TabControl1", "TabControl1\TabControl1.csproj", "{4336B32E-0C19-4583-85FB-E91F02FC1E6F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -117,6 +123,18 @@ Global
 		{32BC95C9-BE12-4CDB-AC97-E2BAC67A503C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{32BC95C9-BE12-4CDB-AC97-E2BAC67A503C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{32BC95C9-BE12-4CDB-AC97-E2BAC67A503C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB19E061-9C7C-4B39-9E8E-39C032653A1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB19E061-9C7C-4B39-9E8E-39C032653A1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB19E061-9C7C-4B39-9E8E-39C032653A1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB19E061-9C7C-4B39-9E8E-39C032653A1B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7697DB40-B14D-4C96-AACF-C6B6444C5A4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7697DB40-B14D-4C96-AACF-C6B6444C5A4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7697DB40-B14D-4C96-AACF-C6B6444C5A4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7697DB40-B14D-4C96-AACF-C6B6444C5A4A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4336B32E-0C19-4583-85FB-E91F02FC1E6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4336B32E-0C19-4583-85FB-E91F02FC1E6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4336B32E-0C19-4583-85FB-E91F02FC1E6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4336B32E-0C19-4583-85FB-E91F02FC1E6F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

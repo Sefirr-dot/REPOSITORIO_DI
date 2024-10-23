@@ -9,12 +9,12 @@ WpfApp18
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
-C:\Users\Alumno\Desktop\Interfaces\REPOSITORIO_DI\Primeras Interfaces\WpfApp1\WpfApp18\App.xaml
-11407045341
+
+2-1094938431
 
 6-1295896223
 198-556154604
-MainWindow.xaml;
+App.xaml;MainWindow.xaml;
 
-True
+False
 
