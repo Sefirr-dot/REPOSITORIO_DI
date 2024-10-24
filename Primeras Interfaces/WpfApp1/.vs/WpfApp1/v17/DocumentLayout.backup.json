@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Alumno\\Desktop\\Interfaces\\REPOSITORIO_DI\\Primeras Interfaces\\WpfApp1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4336B32E-0C19-4583-85FB-E91F02FC1E6F}|TabControl1\\TabControl1.csproj|c:\\users\\alumno\\desktop\\interfaces\\repositorio_di\\primeras interfaces\\wpfapp1\\tabcontrol1\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4336B32E-0C19-4583-85FB-E91F02FC1E6F}|TabControl1\\TabControl1.csproj|solutionrelative:tabcontrol1\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D873674E-1825-4353-AB48-D756B7E37B3C}|Personajes\\Personajes.csproj|c:\\users\\alumno\\desktop\\interfaces\\repositorio_di\\primeras interfaces\\wpfapp1\\personajes\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D873674E-1825-4353-AB48-D756B7E37B3C}|Personajes\\Personajes.csproj|solutionrelative:personajes\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4336B32E-0C19-4583-85FB-E91F02FC1E6F}|TabControl1\\TabControl1.csproj|c:\\users\\alumno\\desktop\\interfaces\\repositorio_di\\primeras interfaces\\wpfapp1\\tabcontrol1\\persona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4336B32E-0C19-4583-85FB-E91F02FC1E6F}|TabControl1\\TabControl1.csproj|solutionrelative:tabcontrol1\\persona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D873674E-1825-4353-AB48-D756B7E37B3C}|Personajes\\Personajes.csproj|c:\\users\\alumno\\desktop\\interfaces\\repositorio_di\\primeras interfaces\\wpfapp1\\personajes\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{D873674E-1825-4353-AB48-D756B7E37B3C}|Personajes\\Personajes.csproj|solutionrelative:personajes\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D873674E-1825-4353-AB48-D756B7E37B3C}|Personajes\\Personajes.csproj|c:\\users\\alumno\\desktop\\interfaces\\repositorio_di\\primeras interfaces\\wpfapp1\\personajes\\personaje.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D873674E-1825-4353-AB48-D756B7E37B3C}|Personajes\\Personajes.csproj|solutionrelative:personajes\\personaje.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4336B32E-0C19-4583-85FB-E91F02FC1E6F}|TabControl1\\TabControl1.csproj|c:\\users\\alumno\\desktop\\interfaces\\repositorio_di\\primeras interfaces\\wpfapp1\\tabcontrol1\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{4336B32E-0C19-4583-85FB-E91F02FC1E6F}|TabControl1\\TabControl1.csproj|solutionrelative:tabcontrol1\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7697DB40-B14D-4C96-AACF-C6B6444C5A4A}|Ventanas\\Ventanas.csproj|c:\\users\\alumno\\desktop\\interfaces\\repositorio_di\\primeras interfaces\\wpfapp1\\ventanas\\addpersonwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{7697DB40-B14D-4C96-AACF-C6B6444C5A4A}|Ventanas\\Ventanas.csproj|solutionrelative:ventanas\\addpersonwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,51 +31,51 @@
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "AddPersonWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\Alumno\\Desktop\\Interfaces\\REPOSITORIO_DI\\Primeras Interfaces\\WpfApp1\\Ventanas\\AddPersonWindow.xaml",
-              "RelativeDocumentMoniker": "Ventanas\\AddPersonWindow.xaml",
-              "ToolTip": "C:\\Users\\Alumno\\Desktop\\Interfaces\\REPOSITORIO_DI\\Primeras Interfaces\\WpfApp1\\Ventanas\\AddPersonWindow.xaml",
-              "RelativeToolTip": "Ventanas\\AddPersonWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-10-23T15:37:19.08Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\Alumno\\Desktop\\Interfaces\\REPOSITORIO_DI\\Primeras Interfaces\\WpfApp1\\TabControl1\\MainWindow.xaml",
               "RelativeDocumentMoniker": "TabControl1\\MainWindow.xaml",
               "ToolTip": "C:\\Users\\Alumno\\Desktop\\Interfaces\\REPOSITORIO_DI\\Primeras Interfaces\\WpfApp1\\TabControl1\\MainWindow.xaml",
               "RelativeToolTip": "TabControl1\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-10-23T15:27:33.68Z",
+              "WhenOpened": "2024-10-24T13:59:37.622Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Personaje.cs",
+              "DocumentMoniker": "C:\\Users\\Alumno\\Desktop\\Interfaces\\REPOSITORIO_DI\\Primeras Interfaces\\WpfApp1\\Personajes\\Personaje.cs",
+              "RelativeDocumentMoniker": "Personajes\\Personaje.cs",
+              "ToolTip": "C:\\Users\\Alumno\\Desktop\\Interfaces\\REPOSITORIO_DI\\Primeras Interfaces\\WpfApp1\\Personajes\\Personaje.cs",
+              "RelativeToolTip": "Personajes\\Personaje.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-24T13:53:20.161Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Persona.cs",
-              "DocumentMoniker": "C:\\Users\\Alumno\\Desktop\\Interfaces\\REPOSITORIO_DI\\Primeras Interfaces\\WpfApp1\\TabControl1\\Persona.cs",
-              "RelativeDocumentMoniker": "TabControl1\\Persona.cs",
-              "ToolTip": "C:\\Users\\Alumno\\Desktop\\Interfaces\\REPOSITORIO_DI\\Primeras Interfaces\\WpfApp1\\TabControl1\\Persona.cs",
-              "RelativeToolTip": "TabControl1\\Persona.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-23T15:26:04.633Z",
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\Alumno\\Desktop\\Interfaces\\REPOSITORIO_DI\\Primeras Interfaces\\WpfApp1\\Personajes\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "Personajes\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\Alumno\\Desktop\\Interfaces\\REPOSITORIO_DI\\Primeras Interfaces\\WpfApp1\\Personajes\\MainWindow.xaml*",
+              "RelativeToolTip": "Personajes\\MainWindow.xaml*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-10-24T13:47:26.703Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Alumno\\Desktop\\Interfaces\\REPOSITORIO_DI\\Primeras Interfaces\\WpfApp1\\TabControl1\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "TabControl1\\MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\Alumno\\Desktop\\Interfaces\\REPOSITORIO_DI\\Primeras Interfaces\\WpfApp1\\TabControl1\\MainWindow.xaml.cs*",
-              "RelativeToolTip": "TabControl1\\MainWindow.xaml.cs*",
-              "ViewState": "AgIAACsAAAAAAAAAAADwv0EAAAAJAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\Alumno\\Desktop\\Interfaces\\REPOSITORIO_DI\\Primeras Interfaces\\WpfApp1\\Personajes\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Personajes\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\Alumno\\Desktop\\Interfaces\\REPOSITORIO_DI\\Primeras Interfaces\\WpfApp1\\Personajes\\MainWindow.xaml.cs*",
+              "RelativeToolTip": "Personajes\\MainWindow.xaml.cs*",
+              "ViewState": "AgIAABkAAAAAAAAAAAAiwDcAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-23T15:21:50.535Z",
+              "WhenOpened": "2024-10-24T13:47:26.294Z",
               "EditorCaption": ""
             }
           ]

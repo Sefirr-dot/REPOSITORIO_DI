@@ -41,9 +41,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfApp18", "WpfApp18\WpfApp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataGrid", "DataGrid\DataGrid.csproj", "{BB19E061-9C7C-4B39-9E8E-39C032653A1B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ventanas", "Ventanas\Ventanas.csproj", "{7697DB40-B14D-4C96-AACF-C6B6444C5A4A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ventanas", "Ventanas\Ventanas.csproj", "{7697DB40-B14D-4C96-AACF-C6B6444C5A4A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TabControl1", "TabControl1\TabControl1.csproj", "{4336B32E-0C19-4583-85FB-E91F02FC1E6F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TabControl1", "TabControl1\TabControl1.csproj", "{4336B32E-0C19-4583-85FB-E91F02FC1E6F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Personajes", "Personajes\Personajes.csproj", "{D873674E-1825-4353-AB48-D756B7E37B3C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -135,6 +137,10 @@ Global
 		{4336B32E-0C19-4583-85FB-E91F02FC1E6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4336B32E-0C19-4583-85FB-E91F02FC1E6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4336B32E-0C19-4583-85FB-E91F02FC1E6F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D873674E-1825-4353-AB48-D756B7E37B3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D873674E-1825-4353-AB48-D756B7E37B3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D873674E-1825-4353-AB48-D756B7E37B3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D873674E-1825-4353-AB48-D756B7E37B3C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
