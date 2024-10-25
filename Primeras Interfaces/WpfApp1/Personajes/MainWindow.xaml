@@ -5,13 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Personajes"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="493" Width="813">
     <Grid>
-        <TabControl>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="561*"/>
+            <ColumnDefinition Width="40*"/>
+        </Grid.ColumnDefinitions>
+        <TabControl Grid.ColumnSpan="2">
             <TabItem Header="Personajes">
                 <StackPanel Orientation="Horizontal">
                     <ListBox Name="listaPersonajes" ItemsSource="{Binding personajeList}" Width="300" SelectionChanged="listaPersonajes_SelectionChanged"/>
-                    <StackPanel Orientation="Vertical" Width="496" >
+                    <StackPanel Orientation="Vertical" Width="161" >
                         <TextBlock TextWrapping="Wrap" Text="Nombre:" Width="120" HorizontalAlignment="Left" Margin="10"/>
                         <TextBlock TextWrapping="Wrap" Name="txtNombre" Text="" Width="120" HorizontalAlignment="Left" Margin="10"/>
                         <TextBlock TextWrapping="Wrap" Text="Genero:" Width="120" HorizontalAlignment="Left" Margin="10"/>
@@ -25,28 +29,52 @@
                         <TextBlock TextWrapping="Wrap" Text="Inteligencia:" Width="120" HorizontalAlignment="Left" Margin="10"/>
                         <TextBlock TextWrapping="Wrap" Name="txtInteligencia" Text="" Width="120" HorizontalAlignment="Left" Margin="10"/>
                     </StackPanel>
+                    <Image x:Name="imagenPersonajes" Height="316" Width="329" Source="/Trasgo.jpeg"/>
                 </StackPanel>
 
             </TabItem>
             <TabItem Header="Creacion de Personajes">
+                <StackPanel Orientation="Horizontal">
+                    <StackPanel Orientation="Vertical" Margin="0,0,100,0" Width="167">
+                        <TextBlock TextWrapping="Wrap" Text="Nombre:" Width="120" HorizontalAlignment="Left" Margin="10"/>
+                        <TextBox TextWrapping="Wrap" Name="txtNombre1" Text="" Width="120" HorizontalAlignment="Left" Margin="10"/>
+                        <TextBlock TextWrapping="Wrap" Text="Genero:" Width="120" HorizontalAlignment="Left" Margin="10"/>
+                        <ComboBox ItemsSource="{Binding genero}" Name="txBoxGenero1" Text="" Width="120" HorizontalAlignment="Left" Margin="10"/>
+                        <TextBlock TextWrapping="Wrap" Text="Clase:" Width="120" HorizontalAlignment="Left" Margin="10"/>
+                        <ComboBox ItemsSource="{Binding clases}" Name="txBoxClase1" Text="" Width="120" HorizontalAlignment="Left" Margin="10" SelectionChanged="txBoxClase1_SelectionChanged"/>
+                        <TextBlock TextWrapping="Wrap" Text="Fuerza:" Width="120" HorizontalAlignment="Left" Margin="10"/>
+
+                        <TextBox TextWrapping="Wrap" Name="txtFuerza1" Text="" Width="120" HorizontalAlignment="Left" Margin="10"/>
+
+                        <TextBlock TextWrapping="Wrap" Text="Inteligencia:" Width="120" HorizontalAlignment="Left" Margin="10"/>
+                        <TextBox TextWrapping="Wrap" Name="txtInteligencia1" Text="" Width="120" HorizontalAlignment="Left" Margin="10"/>
+                        <Button Name="btAgregar" Content="Añadir Personje" Click="btAgregar_Click"/>
+
+
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Height="429" Width="453" >
+                        <Image Name="imagenCreacion" Height="429" Width="491"/>
+                    </StackPanel>
+                </StackPanel>
+
+
+
+            </TabItem>
+            <TabItem Header="Inventario" Height="20" VerticalAlignment="Top">
                 <StackPanel Orientation="Vertical">
-                    <TextBlock TextWrapping="Wrap" Text="Nombre:" Width="120" HorizontalAlignment="Center" Margin="10"/>
-                    <TextBox TextWrapping="Wrap" Name="txtNombre1" Text="" Width="120" HorizontalAlignment="Center" Margin="10"/>
-                    <TextBlock TextWrapping="Wrap" Text="Genero:" Width="120" HorizontalAlignment="Center" Margin="10"/>
-                    <ComboBox ItemsSource="{Binding genero}" Name="txBoxGenero1" Text="" Width="120" HorizontalAlignment="Center" Margin="10"/>
-                    <TextBlock TextWrapping="Wrap" Text="Clase:" Width="120" HorizontalAlignment="Center" Margin="10"/>
-                    <ComboBox ItemsSource="{Binding clases}" Name="txBoxClase1" Text="" Width="120" HorizontalAlignment="Center" Margin="10"/>
-                    <TextBlock TextWrapping="Wrap" Text="Fuerza:" Width="120" HorizontalAlignment="Center" Margin="10"/>
+                    <DataGrid Name="dGridObjetos"  AutoGenerateColumns="False">
+                        <DataGrid.Columns>
 
-                    <TextBox TextWrapping="Wrap" Name="txtFuerza1" Text="" Width="120" HorizontalAlignment="Center" Margin="10"/>
+                            <DataGridTextColumn Header="Nombre" Binding="{Binding Nombre}" Width="*"/>
+                            <DataGridTextColumn Header="Fuerza" Binding="{Binding Fuerza}" Width="*"/>
+                            <DataGridTextColumn Header="Inteligencia" Binding="{Binding Inteligencia}" Width="*"/>
+                        </DataGrid.Columns>
 
-                    <TextBlock TextWrapping="Wrap" Text="Inteligencia:" Width="120" HorizontalAlignment="Center" Margin="10"/>
-                    <TextBox TextWrapping="Wrap" Name="txtInteligencia1" Text="" Width="120" HorizontalAlignment="Center" Margin="10"/>
-                    <Button Name="btAgregar" Content="Añadir Personje" Click="btAgregar_Click"/>
+                    </DataGrid>
 
                 </StackPanel>
-                
             </TabItem>
+
         </TabControl>
 
     </Grid>
