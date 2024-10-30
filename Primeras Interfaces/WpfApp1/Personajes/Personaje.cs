@@ -25,15 +25,82 @@ namespace Personajes
             this.clase = clase;
             this.fuerza = fuerza;
             this.inteligencia = inteligencia;
-            this.ObjetoList = objetoList;
+            this.objetoList = objetoList;
         }
 
-        public string Nombre { get => nombre; set => nombre = value; }
-        public string Genero { get => genero; set => genero = value; }
-        public string Clase { get => clase; set => clase = value; }
-        public int Fuerza { get => fuerza; set => fuerza = value; }
-        public int Inteligencia { get => inteligencia; set => inteligencia = value; }
-        public ObservableCollection<Objeto> ObjetoList { get => objetoList; set => objetoList = value; }
+        public string Nombre
+        {
+            get
+            {
+                return nombre;
+            }
+            set
+            {
+                nombre = value;
+                PropertyChanged(this, new PropertyChangedEventArgs("Nombre"));
+            }
+        }
+        public string Genero
+        {
+            get
+            {
+                return genero;
+            }
+            set
+            {
+                genero = value;
+                PropertyChanged(this, new PropertyChangedEventArgs("Genero"));
+            }
+        }
+        public string Clase
+        {
+            get
+            {
+                return clase;
+            }
+            set
+            {
+                clase = value;
+                PropertyChanged(this, new PropertyChangedEventArgs("Clase"));
+            }
+        }
+
+        public int Fuerza
+        {
+            get
+            {
+                return fuerza;
+            }
+            set
+            {
+                fuerza = value;
+                PropertyChanged(this, new PropertyChangedEventArgs("Fuerza"));
+            }
+        }
+        public int Inteligencia
+        {
+            get
+            {
+                return inteligencia;
+            }
+            set
+            {
+                inteligencia = value;
+                PropertyChanged(this, new PropertyChangedEventArgs("Inteligencia"));
+            }
+        }
+        public ObservableCollection<Objeto> ObjetoList
+        {
+            get
+            {
+                return objetoList;
+            }
+            set
+            {
+                objetoList = value;
+                PropertyChanged(this, new PropertyChangedEventArgs("ObjetoList"));
+            }
+        }
 
         public event PropertyChangedEventHandler? PropertyChanged;
 

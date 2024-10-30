@@ -15,15 +15,37 @@ namespace Personajes
 
         public Objeto(string nombre, int fuerza, int inteligencia)
         {
-            this.Nombre = nombre;
-            this.Fuerza = fuerza;
-            this.Inteligencia = inteligencia;
+            this.nombre = nombre;
+            this.fuerza = fuerza;
+            this.inteligencia = inteligencia;
         }
 
         public string Nombre { get => nombre; set => nombre = value; }
-        public int Fuerza { get => fuerza; set => fuerza = value; }
-        public int Inteligencia { get => inteligencia; set => inteligencia = value; }
+        public int Fuerza
+        {
+            get
+            {
+                return fuerza;
+            }
+            set
+            {
+                fuerza = value;
+                PropertyChanged(this, new PropertyChangedEventArgs("Fuerza"));
+            }
+        }
+        public int Inteligencia
+        {
+            get
+            {
+                return inteligencia;
+            }
+            set
+            {
+                inteligencia = value;
+                PropertyChanged(this, new PropertyChangedEventArgs("Inteligencia"));
+            }
+        }
 
-        public event PropertyChangedEventHandler? PropertyChanged;
+        public event PropertyChangedEventHandler PropertyChanged;
     }
 }

@@ -9,12 +9,18 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Mago.jpeg" />
     <None Remove="Paladin.jpeg" />
     <None Remove="Picaro.jpeg" />
     <None Remove="Trasgo.jpeg" />
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="MySql.Data" Version="9.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Mago.jpeg" />
     <Resource Include="Paladin.jpeg" />
     <Resource Include="Picaro.jpeg" />
     <Resource Include="Trasgo.jpeg" />

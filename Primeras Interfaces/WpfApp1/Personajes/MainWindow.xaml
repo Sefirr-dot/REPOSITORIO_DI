@@ -29,7 +29,7 @@
                         <TextBlock TextWrapping="Wrap" Text="Inteligencia:" Width="120" HorizontalAlignment="Left" Margin="10"/>
                         <TextBlock TextWrapping="Wrap" Name="txtInteligencia" Text="" Width="120" HorizontalAlignment="Left" Margin="10"/>
                     </StackPanel>
-                    <Image x:Name="imagenPersonajes" Height="316" Width="329" Source="/Trasgo.jpeg"/>
+                    <Image x:Name="imagenPersonajes" Height="316" Width="329" Source="/Mago.jpeg"/>
                 </StackPanel>
 
             </TabItem>
@@ -62,7 +62,7 @@
             </TabItem>
             <TabItem Header="Inventario" Height="20" VerticalAlignment="Top">
                 <StackPanel Orientation="Vertical">
-                    <DataGrid Name="dGridObjetos"  AutoGenerateColumns="False">
+                    <DataGrid Name="dGridObjetos"  AutoGenerateColumns="False" >
                         <DataGrid.Columns>
 
                             <DataGridTextColumn Header="Nombre" Binding="{Binding Nombre}" Width="*"/>
