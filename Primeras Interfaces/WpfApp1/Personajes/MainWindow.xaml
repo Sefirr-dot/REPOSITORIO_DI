@@ -36,19 +36,24 @@
             <TabItem Header="Creacion de Personajes">
                 <StackPanel Orientation="Horizontal">
                     <StackPanel Orientation="Vertical" Margin="0,0,100,0" Width="167">
-                        <TextBlock TextWrapping="Wrap" Text="Nombre:" Width="120" HorizontalAlignment="Left" Margin="10"/>
-                        <TextBox TextWrapping="Wrap" Name="txtNombre1" Text="" Width="120" HorizontalAlignment="Left" Margin="10"/>
-                        <TextBlock TextWrapping="Wrap" Text="Genero:" Width="120" HorizontalAlignment="Left" Margin="10"/>
-                        <ComboBox ItemsSource="{Binding genero}" Name="txBoxGenero1" Text="" Width="120" HorizontalAlignment="Left" Margin="10"/>
-                        <TextBlock TextWrapping="Wrap" Text="Clase:" Width="120" HorizontalAlignment="Left" Margin="10"/>
-                        <ComboBox ItemsSource="{Binding clases}" Name="txBoxClase1" Text="" Width="120" HorizontalAlignment="Left" Margin="10" SelectionChanged="txBoxClase1_SelectionChanged"/>
-                        <TextBlock TextWrapping="Wrap" Text="Fuerza:" Width="120" HorizontalAlignment="Left" Margin="10"/>
+                        <TextBlock TextWrapping="Wrap" Text="Nombre:" Width="120" HorizontalAlignment="Left" Margin="5"/>
+                        <TextBox TextWrapping="Wrap" Name="txtNombre1" Text="" Width="120" HorizontalAlignment="Left" Margin="5"/>
+                        <TextBlock TextWrapping="Wrap" Text="Genero:" Width="120" HorizontalAlignment="Left" Margin="5"/>
+                        <ComboBox ItemsSource="{Binding genero}" Name="txBoxGenero1" Text="" Width="120" HorizontalAlignment="Left" Margin="5"/>
+                        <TextBlock TextWrapping="Wrap" Text="Clase:" Width="120" HorizontalAlignment="Left" Margin="5"/>
+                        <ComboBox ItemsSource="{Binding clases}" Name="txBoxClase1" Text="" Width="120" HorizontalAlignment="Left" Margin="5" SelectionChanged="txBoxClase1_SelectionChanged"/>
+                        <TextBlock Name="txbFuerza" TextWrapping="Wrap" Text="Fuerza:" Width="120" HorizontalAlignment="Left" Margin="5"/>
 
-                        <TextBox TextWrapping="Wrap" Name="txtFuerza1" Text="" Width="120" HorizontalAlignment="Left" Margin="10"/>
+                        <Slider  Name="sliderFuerza1"  Width="120" HorizontalAlignment="Left" Margin="5" ValueChanged="sliderFuerza1_ValueChanged"/>
 
-                        <TextBlock TextWrapping="Wrap" Text="Inteligencia:" Width="120" HorizontalAlignment="Left" Margin="10"/>
-                        <TextBox TextWrapping="Wrap" Name="txtInteligencia1" Text="" Width="120" HorizontalAlignment="Left" Margin="10"/>
-                        <Button Name="btAgregar" Content="Añadir Personje" Click="btAgregar_Click"/>
+                        <TextBlock Name="txbInteligencia" TextWrapping="Wrap" Text="Inteligencia:" Width="120" HorizontalAlignment="Left" Margin="5"/>
+                        <Slider  Name="sliderInteligencia"  Width="120" HorizontalAlignment="Left" Margin="5"/>
+                        <TextBlock Name="txbDestreza" TextWrapping="Wrap" Text="Destreza:" Width="120" HorizontalAlignment="Left" Margin="5"/>
+                        <Slider  Name="sliderDestreza"  Width="120" HorizontalAlignment="Left" Margin="5"/>
+                        <TextBlock Name="txbResistencia" TextWrapping="Wrap" Text="Resistencia:" Width="120" HorizontalAlignment="Left" Margin="5"/>
+                        <Slider  Name="sliderResistencia"  Width="120" HorizontalAlignment="Left" Margin="5"/>
+
+                        <Button Name="btAgregar" Content="Añadir Personje" Click="btAgregar_Click" Margin="10"/>
 
 
                     </StackPanel>

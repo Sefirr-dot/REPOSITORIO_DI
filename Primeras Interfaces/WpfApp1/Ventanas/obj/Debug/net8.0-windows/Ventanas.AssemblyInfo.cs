@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Ventanas")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+28dccadcc49c07ba1c197c2fa18c714d85710852")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+526f8637896b6f3fe361a8a69311927a57457580")]
 [assembly: System.Reflection.AssemblyProductAttribute("Ventanas")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Ventanas")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

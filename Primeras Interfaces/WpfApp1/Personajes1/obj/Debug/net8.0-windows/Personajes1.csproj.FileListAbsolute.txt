@@ -1,0 +1,4 @@
+C:\Users\Alumno\Desktop\Interfaces\REPOSITORIO_DI\Primeras Interfaces\WpfApp1\Personajes1\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\Alumno\Desktop\Interfaces\REPOSITORIO_DI\Primeras Interfaces\WpfApp1\Personajes1\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\Alumno\Desktop\Interfaces\REPOSITORIO_DI\Primeras Interfaces\WpfApp1\Personajes1\obj\Debug\net8.0-windows\Personajes1_MarkupCompile.cache
+C:\Users\Alumno\Desktop\Interfaces\REPOSITORIO_DI\Primeras Interfaces\WpfApp1\Personajes1\obj\Debug\net8.0-windows\Personajes1_MarkupCompile.lref

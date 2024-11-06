@@ -53,6 +53,7 @@ namespace Personajes
             imagenes.Add("/Paladin.jpeg");
             imagenes.Add("/Trasgo.jpeg");
             imagenes.Add("/Picaro.jpeg");
+            cargarPersonajes();
 
 
             this.DataContext = this;
@@ -139,6 +140,30 @@ namespace Personajes
             }
         }
 
+        public void cargarObjetos()
+        {
+            string connectionString = ConfigurationManager.ConnectionStrings["MySqlConnection"].ConnectionString;
+            using (MySqlConnection conn = new MySqlConnection(connectionString))
+            {
+                conn.Open();
+                string query = "SELECT idObjetos, nombreObjeto, fuerzaObjeto, inteligenciaObjeto FROM objetos";
+
+                using (MySqlCommand cmd = new MySqlCommand(query, conn))
+                {
+                    using (MySqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            string nombre = reader.GetString("nombreObjeto");
+                            string fuerza = reader.GetString("fuerzaObjeto");
+                            string inteligencia = reader.GetString("nombreObjeto");
+                            
+                        }
+                    }
+                }
+            }
+        }
+
         private void txBoxClase1_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             
@@ -146,5 +171,9 @@ namespace Personajes
             
         }
 
+        private void sliderFuerza1_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+            txbFuerza.Text = "Fuerza: "+sliderFuerza1.Value;
+        }
     }
 }

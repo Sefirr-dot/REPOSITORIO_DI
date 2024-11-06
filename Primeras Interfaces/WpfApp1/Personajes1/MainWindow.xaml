@@ -1,0 +1,86 @@
+﻿<Window x:Class="Personajes1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Personajes1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="561*"/>
+            <ColumnDefinition Width="40*"/>
+        </Grid.ColumnDefinitions>
+        <TabControl Grid.ColumnSpan="2">
+            <TabItem Header="Personajes">
+                <StackPanel Orientation="Horizontal">
+                    <ListBox Name="listaPersonajes"  Width="300" SelectionChanged="listaPersonajes_SelectionChanged"/>
+                    <StackPanel Orientation="Vertical" Width="161" >
+                        <TextBlock TextWrapping="Wrap" Text="Nombre:" Width="120" HorizontalAlignment="Left" Margin="10"/>
+                        <TextBlock TextWrapping="Wrap" Name="txtNombre" Text="" Width="120" HorizontalAlignment="Left" Margin="10"/>
+                        <TextBlock TextWrapping="Wrap" Text="Genero:" Width="120" HorizontalAlignment="Left" Margin="10"/>
+                        <TextBlock TextWrapping="Wrap" Name="txtGenero" Text="" Width="120" HorizontalAlignment="Left" Margin="10"/>
+                        <TextBlock TextWrapping="Wrap" Text="Clase:" Width="120" HorizontalAlignment="Left" Margin="10"/>
+                        <TextBlock TextWrapping="Wrap" Name="txtClase" Text="" Width="120" HorizontalAlignment="Left" Margin="10"/>
+                        <TextBlock TextWrapping="Wrap" Text="Fuerza:" Width="120" HorizontalAlignment="Left" Margin="10"/>
+
+                        <TextBlock TextWrapping="Wrap" Name="txtFuerza" Text="" Width="120" HorizontalAlignment="Left" Margin="10"/>
+
+                        <TextBlock TextWrapping="Wrap" Text="Inteligencia:" Width="120" HorizontalAlignment="Left" Margin="10"/>
+                        <TextBlock TextWrapping="Wrap" Name="txtInteligencia" Text="" Width="120" HorizontalAlignment="Left" Margin="10"/>
+                    </StackPanel>
+                    <Image x:Name="imagenPersonajes" Height="316" Width="329" Source="/Mago.jpeg"/>
+                </StackPanel>
+
+            </TabItem>
+            <TabItem Header="Creacion de Personajes">
+                <StackPanel Orientation="Horizontal">
+                    <StackPanel Orientation="Vertical" Margin="0,0,100,0" Width="167">
+                        <TextBlock TextWrapping="Wrap" Text="Nombre:" Width="120" HorizontalAlignment="Left" Margin="5"/>
+                        <TextBox TextWrapping="Wrap" Name="txtNombre1" Text="" Width="120" HorizontalAlignment="Left" Margin="5"/>
+                        <TextBlock TextWrapping="Wrap" Text="Genero:" Width="120" HorizontalAlignment="Left" Margin="5"/>
+                        <ComboBox  Name="txBoxGenero1" Text="" Width="120" HorizontalAlignment="Left" Margin="5"/>
+                        <TextBlock TextWrapping="Wrap" Text="Clase:" Width="120" HorizontalAlignment="Left" Margin="5"/>
+                        <ComboBox  Name="txBoxClase1" Text="" Width="120" HorizontalAlignment="Left" Margin="5" SelectionChanged="txBoxClase1_SelectionChanged"/>
+                        <TextBlock Name="txbFuerza" TextWrapping="Wrap" Text="Fuerza:" Width="120" HorizontalAlignment="Left" Margin="5"/>
+
+                        <Slider  Name="sliderFuerza1"  Width="120" HorizontalAlignment="Left" Margin="5" ValueChanged="sliderFuerza1_ValueChanged"/>
+
+                        <TextBlock Name="txbInteligencia" TextWrapping="Wrap" Text="Inteligencia:" Width="120" HorizontalAlignment="Left" Margin="5"/>
+                        <Slider  Name="sliderInteligencia"  Width="120" HorizontalAlignment="Left" Margin="5"/>
+                        <TextBlock Name="txbDestreza" TextWrapping="Wrap" Text="Destreza:" Width="120" HorizontalAlignment="Left" Margin="5"/>
+                        <Slider  Name="sliderDestreza"  Width="120" HorizontalAlignment="Left" Margin="5"/>
+                        <TextBlock Name="txbResistencia" TextWrapping="Wrap" Text="Resistencia:" Width="120" HorizontalAlignment="Left" Margin="5"/>
+                        <Slider  Name="sliderResistencia"  Width="120" HorizontalAlignment="Left" Margin="5"/>
+
+                        <Button Name="btAgregar" Content="Añadir Personje" Click="btAgregar_Click" Margin="10"/>
+
+
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Height="429" Width="453" >
+                        <Image Name="imagenCreacion" Height="429" Width="491"/>
+                    </StackPanel>
+                </StackPanel>
+
+
+
+            </TabItem>
+            <TabItem Header="Inventario" Height="20" VerticalAlignment="Top">
+                <StackPanel Orientation="Vertical">
+                    <DataGrid Name="dGridObjetos"  AutoGenerateColumns="False" >
+                        <DataGrid.Columns>
+
+                            <DataGridTextColumn Header="Nombre" Binding="{Binding Nombre}" Width="*"/>
+                            <DataGridTextColumn Header="Fuerza" Binding="{Binding Fuerza}" Width="*"/>
+                            <DataGridTextColumn Header="Inteligencia" Binding="{Binding Inteligencia}" Width="*"/>
+                        </DataGrid.Columns>
+
+                    </DataGrid>
+
+                </StackPanel>
+            </TabItem>
+
+        </TabControl>
+
+    </Grid>
+</Window>
