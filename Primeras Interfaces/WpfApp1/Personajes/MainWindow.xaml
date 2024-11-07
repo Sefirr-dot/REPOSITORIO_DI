@@ -12,24 +12,28 @@
             <ColumnDefinition Width="40*"/>
         </Grid.ColumnDefinitions>
         <TabControl Grid.ColumnSpan="2">
-            <TabItem Header="Personajes">
+            <TabItem Header="Personajes" Height="22" Margin="-2,0,-2,0" VerticalAlignment="Top">
                 <StackPanel Orientation="Horizontal">
-                    <ListBox Name="listaPersonajes" ItemsSource="{Binding personajeList}" Width="300" SelectionChanged="listaPersonajes_SelectionChanged"/>
+                    <DataGrid Name="listaPersonajes" Width="408" SelectionChanged="listaPersonajes_SelectionChanged" ItemsSource="{Binding personajeList}"/>
                     <StackPanel Orientation="Vertical" Width="161" >
-                        <TextBlock TextWrapping="Wrap" Text="Nombre:" Width="120" HorizontalAlignment="Left" Margin="10"/>
-                        <TextBlock TextWrapping="Wrap" Name="txtNombre" Text="" Width="120" HorizontalAlignment="Left" Margin="10"/>
-                        <TextBlock TextWrapping="Wrap" Text="Genero:" Width="120" HorizontalAlignment="Left" Margin="10"/>
-                        <TextBlock TextWrapping="Wrap" Name="txtGenero" Text="" Width="120" HorizontalAlignment="Left" Margin="10"/>
-                        <TextBlock TextWrapping="Wrap" Text="Clase:" Width="120" HorizontalAlignment="Left" Margin="10"/>
-                        <TextBlock TextWrapping="Wrap" Name="txtClase" Text="" Width="120" HorizontalAlignment="Left" Margin="10"/>
-                        <TextBlock TextWrapping="Wrap" Text="Fuerza:" Width="120" HorizontalAlignment="Left" Margin="10"/>
+                        <TextBlock TextWrapping="Wrap" Text="Nombre:" Width="120" HorizontalAlignment="Left" Margin="5"/>
+                        <TextBlock TextWrapping="Wrap" Name="txtNombre" Text="" Width="120" HorizontalAlignment="Left" Margin="5"/>
+                        <TextBlock TextWrapping="Wrap" Text="Genero:" Width="120" HorizontalAlignment="Left" Margin="5"/>
+                        <TextBlock TextWrapping="Wrap" Name="txtGenero" Text="" Width="120" HorizontalAlignment="Left" Margin="5"/>
+                        <TextBlock TextWrapping="Wrap" Text="Clase:" Width="120" HorizontalAlignment="Left" Margin="5"/>
+                        <TextBlock TextWrapping="Wrap" Name="txtClase" Text="" Width="120" HorizontalAlignment="Left" Margin="5"/>
+                        <TextBlock TextWrapping="Wrap" Text="Fuerza:" Width="120" HorizontalAlignment="Left" Margin="5"/>
 
-                        <TextBlock TextWrapping="Wrap" Name="txtFuerza" Text="" Width="120" HorizontalAlignment="Left" Margin="10"/>
+                        <TextBlock TextWrapping="Wrap" Name="txtFuerza" Text="" Width="120" HorizontalAlignment="Left" Margin="5"/>
 
-                        <TextBlock TextWrapping="Wrap" Text="Inteligencia:" Width="120" HorizontalAlignment="Left" Margin="10"/>
-                        <TextBlock TextWrapping="Wrap" Name="txtInteligencia" Text="" Width="120" HorizontalAlignment="Left" Margin="10"/>
+                        <TextBlock TextWrapping="Wrap" Text="Inteligencia:" Width="120" HorizontalAlignment="Left" Margin="5"/>
+                        <TextBlock TextWrapping="Wrap" Name="txtInteligencia" Text="" Width="120" HorizontalAlignment="Left" Margin="5"/>
+                        <TextBlock TextWrapping="Wrap" Text="Destreza:" Width="120" HorizontalAlignment="Left" Margin="5"/>
+                        <TextBlock TextWrapping="Wrap" Name="txtDestreza" Text="" Width="120" HorizontalAlignment="Left" Margin="5"/>
+                        <TextBlock TextWrapping="Wrap" Text="Resistencia:" Width="120" HorizontalAlignment="Left" Margin="5"/>
+                        <TextBlock TextWrapping="Wrap" Name="txtResistencia" Text="" Width="120" HorizontalAlignment="Left" Margin="5"/>
                     </StackPanel>
-                    <Image x:Name="imagenPersonajes" Height="316" Width="329" Source="/Mago.jpeg"/>
+                    <Image x:Name="imagenPersonajes" Height="316" Width="251" Source="/Mago.jpeg"/>
                 </StackPanel>
 
             </TabItem>
@@ -47,11 +51,11 @@
                         <Slider  Name="sliderFuerza1"  Width="120" HorizontalAlignment="Left" Margin="5" ValueChanged="sliderFuerza1_ValueChanged"/>
 
                         <TextBlock Name="txbInteligencia" TextWrapping="Wrap" Text="Inteligencia:" Width="120" HorizontalAlignment="Left" Margin="5"/>
-                        <Slider  Name="sliderInteligencia"  Width="120" HorizontalAlignment="Left" Margin="5"/>
+                        <Slider  Name="sliderInteligencia"  Width="120" HorizontalAlignment="Left" Margin="5" ValueChanged="sliderInteligencia_ValueChanged"/>
                         <TextBlock Name="txbDestreza" TextWrapping="Wrap" Text="Destreza:" Width="120" HorizontalAlignment="Left" Margin="5"/>
-                        <Slider  Name="sliderDestreza"  Width="120" HorizontalAlignment="Left" Margin="5"/>
+                        <Slider  Name="sliderDestreza"  Width="120" HorizontalAlignment="Left" Margin="5" ValueChanged="sliderDestreza_ValueChanged"/>
                         <TextBlock Name="txbResistencia" TextWrapping="Wrap" Text="Resistencia:" Width="120" HorizontalAlignment="Left" Margin="5"/>
-                        <Slider  Name="sliderResistencia"  Width="120" HorizontalAlignment="Left" Margin="5"/>
+                        <Slider  Name="sliderResistencia"  Width="120" HorizontalAlignment="Left" Margin="5" ValueChanged="sliderResistencia_ValueChanged"/>
 
                         <Button Name="btAgregar" Content="Añadir Personje" Click="btAgregar_Click" Margin="10"/>
 
@@ -65,7 +69,7 @@
 
 
             </TabItem>
-            <TabItem Header="Inventario" Height="20" VerticalAlignment="Top">
+            <TabItem Name="tabItemInventario" Header="Inventario" Height="20" VerticalAlignment="Top" IsEnabled="False">
                 <StackPanel Orientation="Vertical">
                     <DataGrid Name="dGridObjetos"  AutoGenerateColumns="False" >
                         <DataGrid.Columns>

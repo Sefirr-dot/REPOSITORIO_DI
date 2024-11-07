@@ -31,13 +31,13 @@ namespace Personajes
         {
             InitializeComponent();
             listaObjetos = new ObservableCollection<Objeto>();
-            Objeto o1 = new Objeto("Hacha", 50, 20);
+            Objeto o1 = new Objeto("Hacha","hola", 50, 20,20,20);
             listaObjetos.Add(o1);
             listaAux = new ObservableCollection<Objeto>();
             personajeList = new ObservableCollection<Personaje>();
-            Personaje p1 = new Personaje("Miguel", "Masculino", "Paladin", 100, 50,listaObjetos);
 
-            personajeList.Add(p1);
+
+
             clases = new List<string>();
             genero = new List<string>();
 
@@ -66,7 +66,8 @@ namespace Personajes
             txtClase.Text = personajeList[listaPersonajes.SelectedIndex].Clase;
             txtFuerza.Text = personajeList[listaPersonajes.SelectedIndex].Fuerza.ToString();
             txtInteligencia.Text = personajeList[listaPersonajes.SelectedIndex].Inteligencia.ToString();
-            listaAux = personajeList[listaPersonajes.SelectedIndex].ObjetoList;
+            txtDestreza.Text = personajeList[listaPersonajes.SelectedIndex].Destreza.ToString();
+            txtResistencia.Text = personajeList[listaPersonajes.SelectedIndex].Resistencia.ToString();
 
             dGridObjetos.ItemsSource = listaAux;
 
@@ -87,7 +88,7 @@ namespace Personajes
                 imagenPersonajes.Source = new BitmapImage(new Uri(imagenes[3], UriKind.Relative));
 
             }
-
+            tabItemInventario.IsEnabled = true;
 
 
 
@@ -96,20 +97,23 @@ namespace Personajes
 
         private void btAgregar_Click(object sender, RoutedEventArgs e)
         {
-            Personaje p1 = new Personaje(txtNombre1.Text,txBoxGenero1.SelectedItem.ToString(),txBoxClase1.SelectedItem.ToString(),int.Parse(txtFuerza1.Text),int.Parse(txtInteligencia1.Text),null);
+            Personaje p1 = new Personaje(txtNombre1.Text,txBoxClase1.SelectedItem.ToString(), txBoxGenero1.SelectedItem.ToString(),(int) Math.Round(sliderFuerza1.Value * 10), (int)Math.Round(sliderInteligencia.Value * 10), (int)Math.Round(sliderDestreza.Value * 10), (int)Math.Round(sliderResistencia.Value * 10));
             personajeList.Add(p1);
             string connectionString = ConfigurationManager.ConnectionStrings["MySqlConnection"].ConnectionString;
             using(MySqlConnection conn = new MySqlConnection(connectionString))
             {
                 conn.Open();
-                string query = "INSERT INTO personajes (Nombre,Genero,Clase,Fuerza,Inteligencia) VALUES (@Nombre,@Genero,@Clase,@Fuerza,@Inteligencia)";
+                string query = "INSERT INTO personaje (Nombre,Clase,Genero,Fuerza,Inteligencia,Destreza,Resistencia,Foto) VALUES (@Nombre,@Clase,@Genero,@Fuerza,@Inteligencia,@Destreza,@Resistencia,@Foto)";
                 using (MySqlCommand cmd = new MySqlCommand(query, conn))
                 {
                     cmd.Parameters.AddWithValue("@Nombre", p1.Nombre);
-                    cmd.Parameters.AddWithValue("@Genero", p1.Genero);
                     cmd.Parameters.AddWithValue("@Clase", p1.Clase);
+                    cmd.Parameters.AddWithValue("@Genero", p1.Genero);                 
                     cmd.Parameters.AddWithValue("@Fuerza", p1.Fuerza);
                     cmd.Parameters.AddWithValue("@Inteligencia", p1.Inteligencia);
+                    cmd.Parameters.AddWithValue("@Destreza", p1.Destreza);
+                    cmd.Parameters.AddWithValue("@Resistencia", p1.Resistencia);
+                    cmd.Parameters.AddWithValue("@Foto", "C:/Users/Alumno/Desktop/Interfaces/REPOSITORIO_DI/Primeras Interfaces/WpfApp1/Personajes/Paladin.jpeg");
                     cmd.ExecuteNonQuery();
                 } 
             }
@@ -120,7 +124,7 @@ namespace Personajes
             using (MySqlConnection conn = new MySqlConnection(connectionString))
             {
                 conn.Open();
-                string query = "SELECT Nombre, Genero, Clase, Fuerza, Inteligencia FROM personajes";
+                string query = "SELECT Nombre,Clase, Genero, Fuerza, Inteligencia, Destreza, Resistencia FROM personaje";
 
                 using (MySqlCommand cmd = new MySqlCommand(query, conn))
                 {
@@ -129,14 +133,31 @@ namespace Personajes
                         while (reader.Read())
                         {
                             string nombre = reader.GetString("Nombre");
-                            string genero = reader.GetString("Genero");
                             string clase = reader.GetString("Clase");
-                            string fuerza = reader.GetString("Fuerza");
-                            string inteligencia = reader.GetString("Inteligencia");
-                            personajeList.Add(new Personaje(nombre, genero, clase, int.Parse(fuerza), int.Parse(inteligencia),null));
+                            string genero = reader.GetString("Genero");
+                            int fuerza = reader.GetInt32("Fuerza");
+                            int inteligencia = reader.GetInt32("Inteligencia");
+                            int destreza = reader.GetInt32("Destreza");
+                            int resistencia = reader.GetInt32("Resistencia");
+                            personajeList.Add(new Personaje(nombre, clase, genero, fuerza, inteligencia,destreza,resistencia));
                         }
                     }
                 } 
+            }
+        }
+
+        public void cargarObjetosPersonaje()
+        {
+            string connectionString = ConfigurationManager.ConnectionStrings["MySqlConnection"].ConnectionString;
+            using (MySqlConnection conn = new MySqlConnection(connectionString))
+            {
+                conn.Open();
+                string query = "SELECT nombre, tipo, fuerza, inteligencia, destreza, resistencia FROM objeto o INNER JOIN inventario i ON o.id=i.objeto_id WHERE o.id=@ID";
+
+                using (MySqlCommand cmd = new MySqlCommand(query, conn))
+                {
+
+                }
             }
         }
 
@@ -173,7 +194,24 @@ namespace Personajes
 
         private void sliderFuerza1_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
         {
-            txbFuerza.Text = "Fuerza: "+sliderFuerza1.Value;
+            txbFuerza.Text = "Fuerza: "+Math.Round(sliderFuerza1.Value*10);
+        }
+
+        private void sliderInteligencia_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+            txbInteligencia.Text = "Inteligencia: " + Math.Round(sliderInteligencia.Value * 10);
+        }
+
+        private void sliderDestreza_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+            txbDestreza.Text = "Destreza: " + Math.Round(sliderDestreza.Value * 10);
+        }
+
+
+
+        private void sliderResistencia_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+            txbResistencia.Text = "Resistencia: " + Math.Round(sliderResistencia.Value * 10);
         }
     }
 }

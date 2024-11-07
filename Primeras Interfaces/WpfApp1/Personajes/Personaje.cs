@@ -16,16 +16,19 @@ namespace Personajes
         private string clase;
         private int fuerza;
         private int inteligencia;
-        private ObservableCollection<Objeto> objetoList;
+        private int destreza;
+        private int resistencia;
 
-        public Personaje(string nombre, string genero, string clase, int fuerza, int inteligencia, ObservableCollection<Objeto> objetoList)
+
+        public Personaje(string nombre, string clase, string genero, int fuerza, int inteligencia, int destreza, int resistencia)
         {
             this.nombre = nombre;
             this.genero = genero;
             this.clase = clase;
             this.fuerza = fuerza;
             this.inteligencia = inteligencia;
-            this.objetoList = objetoList;
+            this.Destreza = destreza;
+            this.Resistencia = resistencia;
         }
 
         public string Nombre
@@ -89,24 +92,15 @@ namespace Personajes
                 PropertyChanged(this, new PropertyChangedEventArgs("Inteligencia"));
             }
         }
-        public ObservableCollection<Objeto> ObjetoList
-        {
-            get
-            {
-                return objetoList;
-            }
-            set
-            {
-                objetoList = value;
-                PropertyChanged(this, new PropertyChangedEventArgs("ObjetoList"));
-            }
-        }
+
+        public int Destreza { get => destreza; set => destreza = value; }
+        public int Resistencia { get => resistencia; set => resistencia = value; }
 
         public event PropertyChangedEventHandler? PropertyChanged;
 
         public override string ToString()
         {
-            return Nombre+" | "+Genero+" | "+Clase + " | " +Fuerza + " | " +Inteligencia;
+            return Nombre+" | "+Genero+" | "+Clase + " | " +Fuerza + " | " +Inteligencia + " | " + Destreza + " | " + Resistencia;
         }
     }
 }
