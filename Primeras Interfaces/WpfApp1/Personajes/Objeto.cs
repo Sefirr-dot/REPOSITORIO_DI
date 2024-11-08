@@ -9,6 +9,7 @@ namespace Personajes
 {
     public class Objeto : INotifyPropertyChanged
     {
+        private int id;
         private string nombre;
         private string tipo;
         private int fuerza;
@@ -16,8 +17,10 @@ namespace Personajes
         private int destreza;
         private int resistencia;
 
-        public Objeto(string nombre, string tipo,int fuerza, int inteligencia,int desreza,int resistencia)
+
+        public Objeto(int id, string nombre, string tipo,int fuerza, int inteligencia,int desreza,int resistencia)
         {
+            this.id = id;
             this.nombre = nombre;
             this.Tipo = tipo;
             this.fuerza = fuerza;
@@ -55,6 +58,7 @@ namespace Personajes
         public int Destreza { get => destreza; set => destreza = value; }
         public int Resistencia { get => resistencia; set => resistencia = value; }
         public string Tipo { get => tipo; set => tipo = value; }
+        public int Id { get => id; set => id = value; }
 
         public event PropertyChangedEventHandler PropertyChanged;
     }

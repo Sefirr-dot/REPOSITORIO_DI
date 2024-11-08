@@ -31,8 +31,7 @@ namespace Personajes
         {
             InitializeComponent();
             listaObjetos = new ObservableCollection<Objeto>();
-            Objeto o1 = new Objeto("Hacha","hola", 50, 20,20,20);
-            listaObjetos.Add(o1);
+
             listaAux = new ObservableCollection<Objeto>();
             personajeList = new ObservableCollection<Personaje>();
 
@@ -89,7 +88,7 @@ namespace Personajes
 
             }
             tabItemInventario.IsEnabled = true;
-
+            cargarObjetosPersonaje();
 
 
 
@@ -97,8 +96,7 @@ namespace Personajes
 
         private void btAgregar_Click(object sender, RoutedEventArgs e)
         {
-            Personaje p1 = new Personaje(txtNombre1.Text,txBoxClase1.SelectedItem.ToString(), txBoxGenero1.SelectedItem.ToString(),(int) Math.Round(sliderFuerza1.Value * 10), (int)Math.Round(sliderInteligencia.Value * 10), (int)Math.Round(sliderDestreza.Value * 10), (int)Math.Round(sliderResistencia.Value * 10));
-            personajeList.Add(p1);
+
             string connectionString = ConfigurationManager.ConnectionStrings["MySqlConnection"].ConnectionString;
             using(MySqlConnection conn = new MySqlConnection(connectionString))
             {
@@ -106,17 +104,18 @@ namespace Personajes
                 string query = "INSERT INTO personaje (Nombre,Clase,Genero,Fuerza,Inteligencia,Destreza,Resistencia,Foto) VALUES (@Nombre,@Clase,@Genero,@Fuerza,@Inteligencia,@Destreza,@Resistencia,@Foto)";
                 using (MySqlCommand cmd = new MySqlCommand(query, conn))
                 {
-                    cmd.Parameters.AddWithValue("@Nombre", p1.Nombre);
-                    cmd.Parameters.AddWithValue("@Clase", p1.Clase);
-                    cmd.Parameters.AddWithValue("@Genero", p1.Genero);                 
-                    cmd.Parameters.AddWithValue("@Fuerza", p1.Fuerza);
-                    cmd.Parameters.AddWithValue("@Inteligencia", p1.Inteligencia);
-                    cmd.Parameters.AddWithValue("@Destreza", p1.Destreza);
-                    cmd.Parameters.AddWithValue("@Resistencia", p1.Resistencia);
+                    cmd.Parameters.AddWithValue("@Nombre", txtNombre1.Text);
+                    cmd.Parameters.AddWithValue("@Clase", txBoxClase1.SelectedItem.ToString());
+                    cmd.Parameters.AddWithValue("@Genero", txBoxGenero1.SelectedItem.ToString());                 
+                    cmd.Parameters.AddWithValue("@Fuerza", (int) Math.Round(sliderFuerza1.Value * 10));
+                    cmd.Parameters.AddWithValue("@Inteligencia", (int) Math.Round(sliderInteligencia.Value * 10));
+                    cmd.Parameters.AddWithValue("@Destreza", (int) Math.Round(sliderDestreza.Value * 10));
+                    cmd.Parameters.AddWithValue("@Resistencia", (int) Math.Round(sliderResistencia.Value * 10));
                     cmd.Parameters.AddWithValue("@Foto", "C:/Users/Alumno/Desktop/Interfaces/REPOSITORIO_DI/Primeras Interfaces/WpfApp1/Personajes/Paladin.jpeg");
                     cmd.ExecuteNonQuery();
                 } 
             }
+            cargarPersonajes();
         }
         public void cargarPersonajes()
         {
@@ -124,7 +123,7 @@ namespace Personajes
             using (MySqlConnection conn = new MySqlConnection(connectionString))
             {
                 conn.Open();
-                string query = "SELECT Nombre,Clase, Genero, Fuerza, Inteligencia, Destreza, Resistencia FROM personaje";
+                string query = "SELECT Id,Nombre,Clase, Genero, Fuerza, Inteligencia, Destreza, Resistencia FROM personaje";
 
                 using (MySqlCommand cmd = new MySqlCommand(query, conn))
                 {
@@ -132,6 +131,7 @@ namespace Personajes
                     {
                         while (reader.Read())
                         {
+                            int id =  reader.GetInt32("Id");
                             string nombre = reader.GetString("Nombre");
                             string clase = reader.GetString("Clase");
                             string genero = reader.GetString("Genero");
@@ -139,7 +139,7 @@ namespace Personajes
                             int inteligencia = reader.GetInt32("Inteligencia");
                             int destreza = reader.GetInt32("Destreza");
                             int resistencia = reader.GetInt32("Resistencia");
-                            personajeList.Add(new Personaje(nombre, clase, genero, fuerza, inteligencia,destreza,resistencia));
+                            personajeList.Add(new Personaje(id,nombre, clase, genero, fuerza, inteligencia,destreza,resistencia));
                         }
                     }
                 } 
@@ -148,18 +148,54 @@ namespace Personajes
 
         public void cargarObjetosPersonaje()
         {
+            // Limpiar la lista antes de cargar nuevos datos
+            listaAux.Clear();
+
             string connectionString = ConfigurationManager.ConnectionStrings["MySqlConnection"].ConnectionString;
             using (MySqlConnection conn = new MySqlConnection(connectionString))
             {
                 conn.Open();
-                string query = "SELECT nombre, tipo, fuerza, inteligencia, destreza, resistencia FROM objeto o INNER JOIN inventario i ON o.id=i.objeto_id WHERE o.id=@ID";
+
+                // Obtener el ID del personaje seleccionado
+                int personajeId = personajeList[listaPersonajes.SelectedIndex].Id;
+
+                // Consulta para obtener los objetos del personaje seleccionado
+                string query = "SELECT o.id AS objeto_id, o.nombre AS objeto_nombre, o.tipo AS objeto_tipo, o.fuerza AS objeto_fuerza," +
+                               " o.inteligencia AS objeto_inteligencia, o.destreza AS objeto_destreza, o.resistencia AS objeto_resistencia," +
+                               " i.equipado AS objeto_equipado FROM Inventario i JOIN Objeto o ON i.objeto_id = o.id WHERE i.personaje_id = @PersonajeId";
 
                 using (MySqlCommand cmd = new MySqlCommand(query, conn))
                 {
+                    // Parámetro seguro para evitar inyección SQL
+                    cmd.Parameters.AddWithValue("@PersonajeId", personajeId);
 
+                    using (MySqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            // Crear una instancia de Objeto con los datos del lector
+                            int objetoId = reader.GetInt32("objeto_id");
+                            string nombre = reader.GetString("objeto_nombre");
+                            string tipo = reader.GetString("objeto_tipo");
+                            int fuerza = reader.GetInt32("objeto_fuerza");
+                            int inteligencia = reader.GetInt32("objeto_inteligencia");
+                            int destreza = reader.GetInt32("objeto_destreza");
+                            int resistencia = reader.GetInt32("objeto_resistencia");
+
+
+                            // Agregar el objeto a la lista auxiliar
+                            Objeto objeto = new Objeto(objetoId, nombre, tipo, fuerza, inteligencia, destreza, resistencia);
+                            listaAux.Add(objeto);
+                        }
+                    }
                 }
             }
+
+            // Establecer el ItemsSource de dGridObjetos para que refleje listaAux
+            dGridObjetos.ItemsSource = listaAux;
         }
+
+
 
         public void cargarObjetos()
         {

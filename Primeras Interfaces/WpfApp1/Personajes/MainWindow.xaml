@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Personajes"
         mc:Ignorable="d"
-        Title="MainWindow" Height="493" Width="813">
+        Title="MainWindow" Height="520" Width="818">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="561*"/>
@@ -69,19 +69,20 @@
 
 
             </TabItem>
-            <TabItem Name="tabItemInventario" Header="Inventario" Height="20" VerticalAlignment="Top" IsEnabled="False">
+            <TabItem Name="tabItemInventario" Header="Inventario" IsEnabled="False" Margin="0,0,0,2">
                 <StackPanel Orientation="Vertical">
-                    <DataGrid Name="dGridObjetos"  AutoGenerateColumns="False" >
+                    <DataGrid Name="dGridObjetos"  AutoGenerateColumns="False" Height="169" >
                         <DataGrid.Columns>
-
                             <DataGridTextColumn Header="Nombre" Binding="{Binding Nombre}" Width="*"/>
                             <DataGridTextColumn Header="Fuerza" Binding="{Binding Fuerza}" Width="*"/>
                             <DataGridTextColumn Header="Inteligencia" Binding="{Binding Inteligencia}" Width="*"/>
                         </DataGrid.Columns>
 
                     </DataGrid>
-
-                </StackPanel>
+                    <ListBox >
+                        
+                    </ListBox>
+                    </StackPanel>
             </TabItem>
 
         </TabControl>
