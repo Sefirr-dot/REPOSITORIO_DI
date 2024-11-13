@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MiniHito1"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="458" Width="800">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="100"></RowDefinition>
@@ -17,7 +17,7 @@
 
         </StackPanel>
         <StackPanel Orientation="Vertical" Grid.Row="1" VerticalAlignment="Top" HorizontalAlignment="Left">
-            <TabControl Height="330" Width="798" TabStripPlacement="Left"  >
+            <TabControl Height="340" Width="788" TabStripPlacement="Left"  >
                 <TabItem Width="100" Height="20" Header="Datos iniciales">
                     <StackPanel Orientation="Horizontal" Height="303">
                         <StackPanel Orientation="Vertical">
@@ -36,11 +36,50 @@
                     </StackPanel>
 
                 </TabItem>
-                <TabItem Name="tabClientes" Width="100" Height="20" Header="Clientes" IsEnabled="False">
+                <TabItem Name="tabClientes" Width="100" Height="20" Header="Empleado">
+
+                    <StackPanel Orientation="Vertical">
+                        <Label Content="Gestión de Empleado" Margin="5"></Label>
+                        <DataGrid Name="dGridEmpleados" Height="163" Margin="5" AutoGenerateColumns="False">
+                            <DataGrid.Columns>
+
+                                <DataGridTextColumn Header="Nombre" Binding="{Binding Nombre}" Width="*"/>
+                                <DataGridTextColumn Header="Rol"  Binding="{Binding Rol}" Width="*"/>
+                                <DataGridTextColumn Header="Coste" Binding="{Binding Coste_por_hora}" Width="*"/>
+
+                            </DataGrid.Columns>
+                        </DataGrid>
+                        <Label Content="Datos del empleado" Margin="5"></Label>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBox Name="txBoxNombreEmpleado" Margin="5" Width="107"></TextBox>
+                            <TextBox Name="txBoxRolEmpleado" Margin="5" Width="107"></TextBox>
+                            <TextBox Name="txBoxCosteEmpleado" Margin="5" Width="107"></TextBox>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <Button Content="Agregar" Margin="5" Click="Button_Click_1"></Button>
+                            <Button Content="Eliminar" Margin="5" Click="Button_Click_2"></Button>
+                        </StackPanel>
+                    </StackPanel>
+                    
                     
                 </TabItem>
-                <TabItem Name="tabProyectos" Header="Proyectos" IsEnabled="False">
-                    
+                <TabItem Name="tabProyectos" Header="Proyectos">
+                    <StackPanel Orientation="Vertical">
+                        <Label Content="Gestión de Proyectos" Margin="5"></Label>
+                        <DataGrid Name="dGridProyectos" Height="132" Margin="5" AutoGenerateColumns="False">
+                            <DataGrid.Columns>
+
+                                <DataGridTextColumn Binding="{Binding Nombre}" Header="Nombre" Width="*"/>
+                                <DataGridTextColumn Binding="{Binding Presupuesto_inicial}" Header="Presupuesto Inicial"  Width="*"/>
+                                <DataGridTextColumn Header="Coste Total"  Width="*"/>
+
+                            </DataGrid.Columns>
+                        </DataGrid>
+                        <Button Content="Eliminar proyecto" Margin="5" Width="174" HorizontalAlignment="Left" Click="Button_Click_3"></Button>
+                        <Label Content="Asignar empleados" Margin="5"></Label>
+                        <ComboBox Name="ComboBoxEmpleados" Width="305" Margin="5" SelectionChanged="ComboBox_SelectionChanged"></ComboBox>
+                        <Button Content="Asignar empleado" Width="305" Click="Button_Click_4"></Button>
+                    </StackPanel>   
                 </TabItem>
 
             </TabControl>

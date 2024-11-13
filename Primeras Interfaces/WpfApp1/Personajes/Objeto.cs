@@ -61,5 +61,10 @@ namespace Personajes
         public int Id { get => id; set => id = value; }
 
         public event PropertyChangedEventHandler PropertyChanged;
+
+        public override string ToString()
+        {
+            return nombre + " | " + tipo + " | " + fuerza + " | " + inteligencia + " | " + destreza + " | " + resistencia;
+        }
     }
 }

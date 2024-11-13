@@ -69,7 +69,7 @@
 
 
             </TabItem>
-            <TabItem Name="tabItemInventario" Header="Inventario" IsEnabled="False" Margin="0,0,0,2">
+            <TabItem Name="tabItemInventario" Header="Inventario" IsEnabled="False" Height="20" VerticalAlignment="Top">
                 <StackPanel Orientation="Vertical">
                     <DataGrid Name="dGridObjetos"  AutoGenerateColumns="False" Height="169" >
                         <DataGrid.Columns>
@@ -77,11 +77,17 @@
                             <DataGridTextColumn Header="Fuerza" Binding="{Binding Fuerza}" Width="*"/>
                             <DataGridTextColumn Header="Inteligencia" Binding="{Binding Inteligencia}" Width="*"/>
                         </DataGrid.Columns>
+                        
 
                     </DataGrid>
-                    <ListBox >
+
+                    <ListBox Name="listaObjetosInventario" ItemsSource="{Binding Path=listaObjetos}" SelectionChanged="ListBox_SelectionChanged">
                         
                     </ListBox>
+                    <StackPanel Orientation="Horizontal">
+                        <Button Content="Añadir" Margin="10" Click="Button_Click"></Button>
+                        <Button Content="Eliminar" Margin="10" Click="Button_Click_1"></Button>
+                    </StackPanel>
                     </StackPanel>
             </TabItem>
 

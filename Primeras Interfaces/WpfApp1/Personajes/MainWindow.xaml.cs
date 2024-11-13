@@ -53,6 +53,7 @@ namespace Personajes
             imagenes.Add("/Trasgo.jpeg");
             imagenes.Add("/Picaro.jpeg");
             cargarPersonajes();
+            aniadirObjetosATablaDeTodosLosObjetos();
 
 
             this.DataContext = this;
@@ -145,7 +146,36 @@ namespace Personajes
                 } 
             }
         }
+        public void aniadirObjetosATablaDeTodosLosObjetos()
+        {
+            string connectionString = ConfigurationManager.ConnectionStrings["MySqlConnection"].ConnectionString;
+            using (MySqlConnection conn = new MySqlConnection(connectionString))
+            {
+                conn.Open();
+                string query = "SELECT * FROM objeto";
+                using ( MySqlCommand cmd  = new MySqlCommand(query, conn))
+                {
+                   using(MySqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            int id = reader.GetInt32("id");
+                            String nombre = reader.GetString("nombre");
+                            String tipo = reader.GetString("tipo");
+                            int fuerza = reader.GetInt32("fuerza");
+                            int inteligencia = reader.GetInt32("inteligencia");
+                            int destreza = reader.GetInt32("destreza");
+                            int resistencia = reader.GetInt32("resistencia");
 
+                            Objeto objeto = new Objeto(id,nombre,tipo,fuerza, inteligencia, destreza, resistencia);
+                            listaObjetos.Add(objeto);
+
+                        }
+                    }
+                }
+            }
+
+        }
         public void cargarObjetosPersonaje()
         {
             // Limpiar la lista antes de cargar nuevos datos
@@ -248,6 +278,49 @@ namespace Personajes
         private void sliderResistencia_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
         {
             txbResistencia.Text = "Resistencia: " + Math.Round(sliderResistencia.Value * 10);
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            string connectionString = ConfigurationManager.ConnectionStrings["MySqlConnection"].ConnectionString;
+            using (MySqlConnection conn = new MySqlConnection(connectionString))
+            {
+                conn.Open();
+                string query = "INSERT INTO inventario (personaje_id,objeto_id,equipado) VALUES (@personaje_id,@objeto_id,@equipado)";
+                using (MySqlCommand cmd = new MySqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@personaje_id", personajeList[listaPersonajes.SelectedIndex].Id);
+                    cmd.Parameters.AddWithValue("@objeto_id",listaObjetos[listaObjetosInventario.SelectedIndex].Id);
+                    cmd.Parameters.AddWithValue("@equipado", 1);
+                    cmd.ExecuteNonQuery();
+                }
+            }
+            cargarObjetosPersonaje();
+        }
+
+        private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            string connectionString = ConfigurationManager.ConnectionStrings["MySqlConnection"].ConnectionString;
+            using (MySqlConnection conn = new MySqlConnection(connectionString))
+            {
+                conn.Open();
+                string query = "DELETE FROM inventario WHERE personaje_id = @personaje_id AND objeto_id = @objeto_id;";
+                using (MySqlCommand cmd = new MySqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@personaje_id", personajeList[listaPersonajes.SelectedIndex].Id);
+                    MessageBox.Show(personajeList[listaPersonajes.SelectedIndex].Id.ToString());
+                    cmd.Parameters.AddWithValue("@objeto_id", listaObjetos[dGridObjetos.SelectedIndex].Id);
+                    MessageBox.Show(listaObjetos[dGridObjetos.SelectedIndex].Id.ToString());
+
+                    cmd.ExecuteNonQuery();
+                }
+            }
+            cargarObjetosPersonaje();
         }
     }
 }
