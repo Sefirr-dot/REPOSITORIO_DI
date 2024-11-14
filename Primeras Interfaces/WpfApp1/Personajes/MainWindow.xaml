@@ -14,7 +14,7 @@
         <TabControl Grid.ColumnSpan="2">
             <TabItem Header="Personajes" Height="22" Margin="-2,0,-2,0" VerticalAlignment="Top">
                 <StackPanel Orientation="Horizontal">
-                    <DataGrid Name="listaPersonajes" Width="408" SelectionChanged="listaPersonajes_SelectionChanged" ItemsSource="{Binding personajeList}"/>
+                    <DataGrid Name="listaPersonajes" Width="408" SelectionChanged="listaPersonajes_SelectionChanged" ItemsSource="{Binding personajeList}" />
                     <StackPanel Orientation="Vertical" Width="161" >
                         <TextBlock TextWrapping="Wrap" Text="Nombre:" Width="120" HorizontalAlignment="Left" Margin="5"/>
                         <TextBlock TextWrapping="Wrap" Name="txtNombre" Text="" Width="120" HorizontalAlignment="Left" Margin="5"/>

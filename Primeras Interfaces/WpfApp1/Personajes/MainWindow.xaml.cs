@@ -214,7 +214,7 @@ namespace Personajes
 
 
                             // Agregar el objeto a la lista auxiliar
-                            Objeto objeto = new Objeto(objetoId, nombre, tipo, fuerza, inteligencia, destreza, resistencia);
+                            Objeto objeto = new Objeto(objetoId,nombre, tipo, fuerza, inteligencia, destreza, resistencia);
                             listaAux.Add(objeto);
                         }
                     }
@@ -303,19 +303,47 @@ namespace Personajes
 
         }
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
+        private int cogerIdInventario()
         {
+            int id = 0;
             string connectionString = ConfigurationManager.ConnectionStrings["MySqlConnection"].ConnectionString;
             using (MySqlConnection conn = new MySqlConnection(connectionString))
             {
                 conn.Open();
-                string query = "DELETE FROM inventario WHERE personaje_id = @personaje_id AND objeto_id = @objeto_id;";
+                string query = "SELECT max(id) as id FROM inventario WHERE personaje_id = @personaje_id AND objeto_id = @objeto_id;";
                 using (MySqlCommand cmd = new MySqlCommand(query, conn))
                 {
                     cmd.Parameters.AddWithValue("@personaje_id", personajeList[listaPersonajes.SelectedIndex].Id);
-                    MessageBox.Show(personajeList[listaPersonajes.SelectedIndex].Id.ToString());
-                    cmd.Parameters.AddWithValue("@objeto_id", listaObjetos[dGridObjetos.SelectedIndex].Id);
-                    MessageBox.Show(listaObjetos[dGridObjetos.SelectedIndex].Id.ToString());
+                    cmd.Parameters.AddWithValue("@objeto_id", listaAux[dGridObjetos.SelectedIndex].Id);
+                    cmd.ExecuteNonQuery();
+                    using (MySqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            id =  reader.GetInt32("id");
+
+                        }
+                    }
+                }
+            }
+            return id;
+
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+
+            string connectionString = ConfigurationManager.ConnectionStrings["MySqlConnection"].ConnectionString;
+            using (MySqlConnection conn = new MySqlConnection(connectionString))
+            {
+                conn.Open();
+                string query = "DELETE FROM inventario WHERE personaje_id = @personaje_id AND objeto_id = @objeto_id AND id=@id_inventario;";
+                using (MySqlCommand cmd = new MySqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@personaje_id", personajeList[listaPersonajes.SelectedIndex].Id);
+                    cmd.Parameters.AddWithValue("@objeto_id", listaAux[dGridObjetos.SelectedIndex].Id);
+                    cmd.Parameters.AddWithValue("@id_inventario", cogerIdInventario());
+
 
                     cmd.ExecuteNonQuery();
                 }
