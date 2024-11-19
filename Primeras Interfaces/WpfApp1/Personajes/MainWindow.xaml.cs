@@ -1,7 +1,9 @@
 ﻿using MySql.Data.MySqlClient;
 using System.Collections;
 using System.Collections.ObjectModel;
+using System.ComponentModel;
 using System.Configuration;
+using System.Data;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
@@ -21,12 +23,14 @@ namespace Personajes
     ///
     public partial class MainWindow : Window
     {
-        public ObservableCollection<Objeto> listaObjetos {  get; set; }
+        public ObservableCollection<Objeto> listaObjetos { get; set; }
         public ObservableCollection<Personaje> personajeList { get; set; }
-        public ObservableCollection<Objeto> listaAux {  get; set; }
+        public ObservableCollection<Objeto> listaAux { get; set; }
         public List<string> clases { get; set; }
         public List<string> genero { get; set; }
         public ObservableCollection<string> imagenes { get; set; }
+        public ObservableCollection<string> imagesPersonajes { get; set; }
+        private ICollectionView vistafiltrada;
         public MainWindow()
         {
             InitializeComponent();
@@ -52,54 +56,106 @@ namespace Personajes
             imagenes.Add("/Paladin.jpeg");
             imagenes.Add("/Trasgo.jpeg");
             imagenes.Add("/Picaro.jpeg");
-            cargarPersonajes();
+            
             aniadirObjetosATablaDeTodosLosObjetos();
 
 
             this.DataContext = this;
+            vistafiltrada = CollectionViewSource.GetDefaultView(listaAux);
+            vistafiltrada = CollectionViewSource.GetDefaultView(personajeList);
+            listaPersonajes.ItemsSource = vistafiltrada;
         }
 
+        private async Task<ObservableCollection<Personaje>> ObtenerPersonasAsync()
+        {
+            ObservableCollection<Personaje> listPersonas = new ObservableCollection<Personaje>();
+            string connectionString = ConfigurationManager.ConnectionStrings["MySqlConnection"].ConnectionString;
+
+            using (var conn = new MySqlConnection(connectionString))
+            {
+                await conn.OpenAsync();
+                string query = "SELECT Id,Nombre,Clase, Genero, Fuerza, Inteligencia, Destreza, Resistencia, Foto FROM personaje";
+                
+                using (var cmd = new MySqlCommand(query, conn))
+                {
+                    using (var reader = await cmd.ExecuteReaderAsync())
+                    {
+                        while (await reader.ReadAsync())
+                        {
+                            int id = reader.GetInt32("Id");
+                            string nombre = reader.GetString("Nombre");
+                            string clase = reader.GetString("Clase");
+                            string genero = reader.GetString("Genero");
+                            int fuerza = reader.GetInt32("Fuerza");
+                            int inteligencia = reader.GetInt32("Inteligencia");
+                            int destreza = reader.GetInt32("Destreza");
+                            int resistencia = reader.GetInt32("Resistencia");
+                            string foto = reader.GetString("Foto");
+                            personajeList.Add(new Personaje(id, nombre, clase, genero, fuerza, inteligencia, destreza, resistencia, foto));
+                        }
+                    }
+                    conn.Close();
+                }
+            }
+            return listPersonas;
+        }
+        private void Filtrar(string texto)
+        {
+            vistafiltrada.Filter = personaje =>
+            {
+                if (personaje is Personaje p1)
+                {
+                    return string.IsNullOrEmpty(texto.ToLower()) || p1.Nombre.Contains(texto.ToLower(), StringComparison.OrdinalIgnoreCase);
+                }
+                return false;
+            };
+            vistafiltrada.Refresh();
+            vistafiltrada = CollectionViewSource.GetDefaultView(personajeList);
+            listaPersonajes.ItemsSource = vistafiltrada;
+        }
         private void listaPersonajes_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            txtNombre.Text= personajeList[listaPersonajes.SelectedIndex].Nombre;
-            txtGenero.Text = personajeList[listaPersonajes.SelectedIndex].Genero;
-            txtClase.Text = personajeList[listaPersonajes.SelectedIndex].Clase;
-            txtFuerza.Text = personajeList[listaPersonajes.SelectedIndex].Fuerza.ToString();
-            txtInteligencia.Text = personajeList[listaPersonajes.SelectedIndex].Inteligencia.ToString();
-            txtDestreza.Text = personajeList[listaPersonajes.SelectedIndex].Destreza.ToString();
-            txtResistencia.Text = personajeList[listaPersonajes.SelectedIndex].Resistencia.ToString();
-
-            dGridObjetos.ItemsSource = listaAux;
-
-            if (personajeList[listaPersonajes.SelectedIndex].Clase == "Mago")
+            // Check if an item is selected
+            if (listaPersonajes.SelectedItem is Personaje selectedPersonaje)
             {
-                imagenPersonajes.Source = new BitmapImage(new Uri(imagenes[0], UriKind.Relative));
+                // Use the selected object directly
+                txtNombre.Text = selectedPersonaje.Nombre;
+                txtGenero.Text = selectedPersonaje.Genero;
+                txtClase.Text = selectedPersonaje.Clase;
+                txtFuerza.Text = selectedPersonaje.Fuerza.ToString();
+                txtInteligencia.Text = selectedPersonaje.Inteligencia.ToString();
+                txtDestreza.Text = selectedPersonaje.Destreza.ToString();
+                txtResistencia.Text = selectedPersonaje.Resistencia.ToString();
 
-            } else if(personajeList[listaPersonajes.SelectedIndex].Clase == "Paladin")
-            {
-                imagenPersonajes.Source = new BitmapImage(new Uri(imagenes[1], UriKind.Relative));
+                dGridObjetos.ItemsSource = listaAux;
 
-            } else if (personajeList[listaPersonajes.SelectedIndex].Clase == "Trasgo")
-            {
-                imagenPersonajes.Source = new BitmapImage(new Uri(imagenes[2], UriKind.Relative));
+                // Set the image based on the selected character's class
+                switch (selectedPersonaje.Clase)
+                {
+                    case "Mago":
+                        imagenPersonajes.Source = new BitmapImage(new Uri(imagenes[0], UriKind.Relative));
+                        break;
+                    case "Paladin":
+                        imagenPersonajes.Source = new BitmapImage(new Uri(imagenes[1], UriKind.Relative));
+                        break;
+                    case "Trasgo":
+                        imagenPersonajes.Source = new BitmapImage(new Uri(imagenes[2], UriKind.Relative));
+                        break;
+                    case "Picaro":
+                        imagenPersonajes.Source = new BitmapImage(new Uri(imagenes[3], UriKind.Relative));
+                        break;
+                }
 
-            } else if (personajeList[listaPersonajes.SelectedIndex].Clase == "Picaro")
-            {
-                imagenPersonajes.Source = new BitmapImage(new Uri(imagenes[3], UriKind.Relative));
-
+                tabItemInventario.IsEnabled = true;
+                cargarObjetosPersonaje(selectedPersonaje.Id);
             }
-            tabItemInventario.IsEnabled = true;
-            cargarObjetosPersonaje();
-
-
-
         }
 
         private void btAgregar_Click(object sender, RoutedEventArgs e)
         {
 
             string connectionString = ConfigurationManager.ConnectionStrings["MySqlConnection"].ConnectionString;
-            using(MySqlConnection conn = new MySqlConnection(connectionString))
+            using (MySqlConnection conn = new MySqlConnection(connectionString))
             {
                 conn.Open();
                 string query = "INSERT INTO personaje (Nombre,Clase,Genero,Fuerza,Inteligencia,Destreza,Resistencia,Foto) VALUES (@Nombre,@Clase,@Genero,@Fuerza,@Inteligencia,@Destreza,@Resistencia,@Foto)";
@@ -107,14 +163,14 @@ namespace Personajes
                 {
                     cmd.Parameters.AddWithValue("@Nombre", txtNombre1.Text);
                     cmd.Parameters.AddWithValue("@Clase", txBoxClase1.SelectedItem.ToString());
-                    cmd.Parameters.AddWithValue("@Genero", txBoxGenero1.SelectedItem.ToString());                 
-                    cmd.Parameters.AddWithValue("@Fuerza", (int) Math.Round(sliderFuerza1.Value * 10));
-                    cmd.Parameters.AddWithValue("@Inteligencia", (int) Math.Round(sliderInteligencia.Value * 10));
-                    cmd.Parameters.AddWithValue("@Destreza", (int) Math.Round(sliderDestreza.Value * 10));
-                    cmd.Parameters.AddWithValue("@Resistencia", (int) Math.Round(sliderResistencia.Value * 10));
-                    cmd.Parameters.AddWithValue("@Foto", "C:/Users/Alumno/Desktop/Interfaces/REPOSITORIO_DI/Primeras Interfaces/WpfApp1/Personajes/Paladin.jpeg");
+                    cmd.Parameters.AddWithValue("@Genero", txBoxGenero1.SelectedItem.ToString());
+                    cmd.Parameters.AddWithValue("@Fuerza", (int)Math.Round(sliderFuerza1.Value * 10));
+                    cmd.Parameters.AddWithValue("@Inteligencia", (int)Math.Round(sliderInteligencia.Value * 10));
+                    cmd.Parameters.AddWithValue("@Destreza", (int)Math.Round(sliderDestreza.Value * 10));
+                    cmd.Parameters.AddWithValue("@Resistencia", (int)Math.Round(sliderResistencia.Value * 10));
+                    cmd.Parameters.AddWithValue("@Foto", "C:/Users/Alumno/Desktop/Interfaces/REPOSITORIO_DI/Primeras Interfaces/WpfApp1/Personajes/" + txBoxClase1.SelectedItem.ToString() + ".jpeg");
                     cmd.ExecuteNonQuery();
-                } 
+                }
             }
             cargarPersonajes();
         }
@@ -124,7 +180,7 @@ namespace Personajes
             using (MySqlConnection conn = new MySqlConnection(connectionString))
             {
                 conn.Open();
-                string query = "SELECT Id,Nombre,Clase, Genero, Fuerza, Inteligencia, Destreza, Resistencia FROM personaje";
+                string query = "SELECT Id,Nombre,Clase, Genero, Fuerza, Inteligencia, Destreza, Resistencia, Foto FROM personaje";
 
                 using (MySqlCommand cmd = new MySqlCommand(query, conn))
                 {
@@ -132,7 +188,7 @@ namespace Personajes
                     {
                         while (reader.Read())
                         {
-                            int id =  reader.GetInt32("Id");
+                            int id = reader.GetInt32("Id");
                             string nombre = reader.GetString("Nombre");
                             string clase = reader.GetString("Clase");
                             string genero = reader.GetString("Genero");
@@ -140,10 +196,11 @@ namespace Personajes
                             int inteligencia = reader.GetInt32("Inteligencia");
                             int destreza = reader.GetInt32("Destreza");
                             int resistencia = reader.GetInt32("Resistencia");
-                            personajeList.Add(new Personaje(id,nombre, clase, genero, fuerza, inteligencia,destreza,resistencia));
+                            string foto = reader.GetString("Foto");
+                            personajeList.Add(new Personaje(id, nombre, clase, genero, fuerza, inteligencia, destreza, resistencia, foto));
                         }
                     }
-                } 
+                }
             }
         }
         public void aniadirObjetosATablaDeTodosLosObjetos()
@@ -153,9 +210,9 @@ namespace Personajes
             {
                 conn.Open();
                 string query = "SELECT * FROM objeto";
-                using ( MySqlCommand cmd  = new MySqlCommand(query, conn))
+                using (MySqlCommand cmd = new MySqlCommand(query, conn))
                 {
-                   using(MySqlDataReader reader = cmd.ExecuteReader())
+                    using (MySqlDataReader reader = cmd.ExecuteReader())
                     {
                         while (reader.Read())
                         {
@@ -167,7 +224,7 @@ namespace Personajes
                             int destreza = reader.GetInt32("destreza");
                             int resistencia = reader.GetInt32("resistencia");
 
-                            Objeto objeto = new Objeto(id,nombre,tipo,fuerza, inteligencia, destreza, resistencia);
+                            Objeto objeto = new Objeto(id, nombre, tipo, fuerza, inteligencia, destreza, resistencia);
                             listaObjetos.Add(objeto);
 
                         }
@@ -176,7 +233,7 @@ namespace Personajes
             }
 
         }
-        public void cargarObjetosPersonaje()
+        public void cargarObjetosPersonaje(int id)
         {
             // Limpiar la lista antes de cargar nuevos datos
             listaAux.Clear();
@@ -187,7 +244,7 @@ namespace Personajes
                 conn.Open();
 
                 // Obtener el ID del personaje seleccionado
-                int personajeId = personajeList[listaPersonajes.SelectedIndex].Id;
+                int personajeId = id;
 
                 // Consulta para obtener los objetos del personaje seleccionado
                 string query = "SELECT o.id AS objeto_id, o.nombre AS objeto_nombre, o.tipo AS objeto_tipo, o.fuerza AS objeto_fuerza," +
@@ -214,7 +271,7 @@ namespace Personajes
 
 
                             // Agregar el objeto a la lista auxiliar
-                            Objeto objeto = new Objeto(objetoId,nombre, tipo, fuerza, inteligencia, destreza, resistencia);
+                            Objeto objeto = new Objeto(objetoId, nombre, tipo, fuerza, inteligencia, destreza, resistencia);
                             listaAux.Add(objeto);
                         }
                     }
@@ -244,7 +301,7 @@ namespace Personajes
                             string nombre = reader.GetString("nombreObjeto");
                             string fuerza = reader.GetString("fuerzaObjeto");
                             string inteligencia = reader.GetString("nombreObjeto");
-                            
+
                         }
                     }
                 }
@@ -253,14 +310,14 @@ namespace Personajes
 
         private void txBoxClase1_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            
-           imagenCreacion.Source = new BitmapImage(new Uri(imagenes[txBoxClase1.SelectedIndex], UriKind.Relative));
-            
+
+            imagenCreacion.Source = new BitmapImage(new Uri(imagenes[txBoxClase1.SelectedIndex], UriKind.Relative));
+
         }
 
         private void sliderFuerza1_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
         {
-            txbFuerza.Text = "Fuerza: "+Math.Round(sliderFuerza1.Value*10);
+            txbFuerza.Text = "Fuerza: " + Math.Round(sliderFuerza1.Value * 10);
         }
 
         private void sliderInteligencia_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
@@ -289,13 +346,18 @@ namespace Personajes
                 string query = "INSERT INTO inventario (personaje_id,objeto_id,equipado) VALUES (@personaje_id,@objeto_id,@equipado)";
                 using (MySqlCommand cmd = new MySqlCommand(query, conn))
                 {
-                    cmd.Parameters.AddWithValue("@personaje_id", personajeList[listaPersonajes.SelectedIndex].Id);
-                    cmd.Parameters.AddWithValue("@objeto_id",listaObjetos[listaObjetosInventario.SelectedIndex].Id);
-                    cmd.Parameters.AddWithValue("@equipado", 1);
-                    cmd.ExecuteNonQuery();
+                    if (listaPersonajes.SelectedItem is Personaje selectedPersonaje)
+                    {
+                        cmd.Parameters.AddWithValue("@personaje_id", selectedPersonaje.Id);
+                        cmd.Parameters.AddWithValue("@objeto_id", listaObjetos[listaObjetosInventario.SelectedIndex].Id);
+                        cmd.Parameters.AddWithValue("@equipado", 1);
+                        cmd.ExecuteNonQuery();
+                        cargarObjetosPersonaje(selectedPersonaje.Id);
+                    }
+                        
                 }
             }
-            cargarObjetosPersonaje();
+            
         }
 
         private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -320,7 +382,7 @@ namespace Personajes
                     {
                         while (reader.Read())
                         {
-                            id =  reader.GetInt32("id");
+                            id = reader.GetInt32("id");
 
                         }
                     }
@@ -340,15 +402,28 @@ namespace Personajes
                 string query = "DELETE FROM inventario WHERE personaje_id = @personaje_id AND objeto_id = @objeto_id AND id=@id_inventario;";
                 using (MySqlCommand cmd = new MySqlCommand(query, conn))
                 {
-                    cmd.Parameters.AddWithValue("@personaje_id", personajeList[listaPersonajes.SelectedIndex].Id);
-                    cmd.Parameters.AddWithValue("@objeto_id", listaAux[dGridObjetos.SelectedIndex].Id);
-                    cmd.Parameters.AddWithValue("@id_inventario", cogerIdInventario());
+                    if (listaPersonajes.SelectedItem is Personaje selectedPersonaje)
+                    {
+                        cmd.Parameters.AddWithValue("@personaje_id", selectedPersonaje.Id);
+                        cmd.Parameters.AddWithValue("@objeto_id", listaAux[dGridObjetos.SelectedIndex].Id);
+                        cmd.Parameters.AddWithValue("@id_inventario", cogerIdInventario());
 
 
-                    cmd.ExecuteNonQuery();
+                        cmd.ExecuteNonQuery();
+                        cargarObjetosPersonaje(selectedPersonaje.Id);
+                    }
+
+                        
                 }
             }
-            cargarObjetosPersonaje();
+            
         }
+
+        private void Filtro_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            Filtrar(Filtro.Text);
+        }
+
+        
     }
 }

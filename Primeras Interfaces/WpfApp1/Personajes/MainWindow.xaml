@@ -14,24 +14,27 @@
         <TabControl Grid.ColumnSpan="2">
             <TabItem Header="Personajes" Height="22" Margin="-2,0,-2,0" VerticalAlignment="Top">
                 <StackPanel Orientation="Horizontal">
-                    <DataGrid Name="listaPersonajes" Width="408" SelectionChanged="listaPersonajes_SelectionChanged" ItemsSource="{Binding personajeList}" />
+                    <StackPanel Orientation="Vertical">
+                        <DataGrid x:Name="listaPersonajes" Width="408" SelectionChanged="listaPersonajes_SelectionChanged" ItemsSource="{Binding personajeList}" Height="407" />
+                        <TextBox Name="Filtro" Margin="10" Height="34" TextChanged="Filtro_TextChanged"/>
+                    </StackPanel>
                     <StackPanel Orientation="Vertical" Width="161" >
                         <TextBlock TextWrapping="Wrap" Text="Nombre:" Width="120" HorizontalAlignment="Left" Margin="5"/>
-                        <TextBlock TextWrapping="Wrap" Name="txtNombre" Text="" Width="120" HorizontalAlignment="Left" Margin="5"/>
+                        <TextBlock TextWrapping="Wrap" x:Name="txtNombre" Text="" Width="120" HorizontalAlignment="Left" Margin="5"/>
                         <TextBlock TextWrapping="Wrap" Text="Genero:" Width="120" HorizontalAlignment="Left" Margin="5"/>
-                        <TextBlock TextWrapping="Wrap" Name="txtGenero" Text="" Width="120" HorizontalAlignment="Left" Margin="5"/>
+                        <TextBlock TextWrapping="Wrap" x:Name="txtGenero" Text="" Width="120" HorizontalAlignment="Left" Margin="5"/>
                         <TextBlock TextWrapping="Wrap" Text="Clase:" Width="120" HorizontalAlignment="Left" Margin="5"/>
-                        <TextBlock TextWrapping="Wrap" Name="txtClase" Text="" Width="120" HorizontalAlignment="Left" Margin="5"/>
+                        <TextBlock TextWrapping="Wrap" x:Name="txtClase" Text="" Width="120" HorizontalAlignment="Left" Margin="5"/>
                         <TextBlock TextWrapping="Wrap" Text="Fuerza:" Width="120" HorizontalAlignment="Left" Margin="5"/>
 
-                        <TextBlock TextWrapping="Wrap" Name="txtFuerza" Text="" Width="120" HorizontalAlignment="Left" Margin="5"/>
+                        <TextBlock TextWrapping="Wrap" x:Name="txtFuerza" Text="" Width="120" HorizontalAlignment="Left" Margin="5"/>
 
                         <TextBlock TextWrapping="Wrap" Text="Inteligencia:" Width="120" HorizontalAlignment="Left" Margin="5"/>
-                        <TextBlock TextWrapping="Wrap" Name="txtInteligencia" Text="" Width="120" HorizontalAlignment="Left" Margin="5"/>
+                        <TextBlock TextWrapping="Wrap" x:Name="txtInteligencia" Text="" Width="120" HorizontalAlignment="Left" Margin="5"/>
                         <TextBlock TextWrapping="Wrap" Text="Destreza:" Width="120" HorizontalAlignment="Left" Margin="5"/>
-                        <TextBlock TextWrapping="Wrap" Name="txtDestreza" Text="" Width="120" HorizontalAlignment="Left" Margin="5"/>
+                        <TextBlock TextWrapping="Wrap" x:Name="txtDestreza" Text="" Width="120" HorizontalAlignment="Left" Margin="5"/>
                         <TextBlock TextWrapping="Wrap" Text="Resistencia:" Width="120" HorizontalAlignment="Left" Margin="5"/>
-                        <TextBlock TextWrapping="Wrap" Name="txtResistencia" Text="" Width="120" HorizontalAlignment="Left" Margin="5"/>
+                        <TextBlock TextWrapping="Wrap" x:Name="txtResistencia" Text="" Width="120" HorizontalAlignment="Left" Margin="5"/>
                     </StackPanel>
                     <Image x:Name="imagenPersonajes" Height="316" Width="251" Source="/Mago.jpeg"/>
                 </StackPanel>
@@ -77,18 +80,18 @@
                             <DataGridTextColumn Header="Fuerza" Binding="{Binding Fuerza}" Width="*"/>
                             <DataGridTextColumn Header="Inteligencia" Binding="{Binding Inteligencia}" Width="*"/>
                         </DataGrid.Columns>
-                        
+
 
                     </DataGrid>
 
                     <ListBox Name="listaObjetosInventario" ItemsSource="{Binding Path=listaObjetos}" SelectionChanged="ListBox_SelectionChanged">
-                        
+
                     </ListBox>
                     <StackPanel Orientation="Horizontal">
                         <Button Content="Añadir" Margin="10" Click="Button_Click"></Button>
                         <Button Content="Eliminar" Margin="10" Click="Button_Click_1"></Button>
                     </StackPanel>
-                    </StackPanel>
+                </StackPanel>
             </TabItem>
 
         </TabControl>

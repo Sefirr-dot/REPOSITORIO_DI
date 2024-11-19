@@ -19,9 +19,10 @@ namespace Personajes
         private int inteligencia;
         private int destreza;
         private int resistencia;
+        private string foto;
 
 
-        public Personaje(int id,string nombre, string clase, string genero, int fuerza, int inteligencia, int destreza, int resistencia)
+        public Personaje(int id,string nombre, string clase, string genero, int fuerza, int inteligencia, int destreza, int resistencia, string foto)
         {
             this.id = id;
             this.nombre = nombre;
@@ -31,6 +32,7 @@ namespace Personajes
             this.inteligencia = inteligencia;
             this.Destreza = destreza;
             this.Resistencia = resistencia;
+            this.Foto = foto;
         }
 
         public string Nombre
@@ -98,6 +100,7 @@ namespace Personajes
         public int Destreza { get => destreza; set => destreza = value; }
         public int Resistencia { get => resistencia; set => resistencia = value; }
         public int Id { get => id; set => id = value; }
+        public string Foto { get => foto; set => foto = value; }
 
         public event PropertyChangedEventHandler? PropertyChanged;
 
