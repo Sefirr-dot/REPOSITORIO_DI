@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MiniHito1")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fa67025a109d6633eb6c7f95a1dc96b46da8faca")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d61b3b1efe4d15497317dd33808c4f5a06cddf79")]
 [assembly: System.Reflection.AssemblyProductAttribute("MiniHito1")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MiniHito1")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -58,7 +58,7 @@ namespace Personajes
             imagenes.Add("/Picaro.jpeg");
             
             aniadirObjetosATablaDeTodosLosObjetos();
-
+            cargarPersonajes();
 
             this.DataContext = this;
             vistafiltrada = CollectionViewSource.GetDefaultView(listaAux);
@@ -66,6 +66,7 @@ namespace Personajes
             listaPersonajes.ItemsSource = vistafiltrada;
         }
 
+        //CON AWAIT, NO USAR. REPITO, NO USAR, CABEZA BUKE >:(
         private async Task<ObservableCollection<Personaje>> ObtenerPersonasAsync()
         {
             ObservableCollection<Personaje> listPersonas = new ObservableCollection<Personaje>();
@@ -176,6 +177,7 @@ namespace Personajes
         }
         public void cargarPersonajes()
         {
+            personajeList.Clear();
             string connectionString = ConfigurationManager.ConnectionStrings["MySqlConnection"].ConnectionString;
             using (MySqlConnection conn = new MySqlConnection(connectionString))
             {

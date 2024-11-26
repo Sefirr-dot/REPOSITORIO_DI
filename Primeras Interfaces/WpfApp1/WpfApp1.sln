@@ -49,7 +49,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Personajes", "Personajes\Pe
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MiniHito1", "MiniHito1\MiniHito1.csproj", "{40D60CD3-FCDE-46B7-94E8-F2C356936C8F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Personajes1", "Personajes1\Personajes1.csproj", "{29C80A7F-E455-4A78-B8DA-3625ECAA154B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Personajes1", "Personajes1\Personajes1.csproj", "{29C80A7F-E455-4A78-B8DA-3625ECAA154B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EjRepaso", "EjRepaso\EjRepaso.csproj", "{AB850AA2-F0FA-48C5-A739-733A65A832A9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityFramework", "EntityFramework\EntityFramework.csproj", "{689C0701-B70F-45DD-AE82-EF25DD041E0E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -153,6 +157,14 @@ Global
 		{29C80A7F-E455-4A78-B8DA-3625ECAA154B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{29C80A7F-E455-4A78-B8DA-3625ECAA154B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{29C80A7F-E455-4A78-B8DA-3625ECAA154B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB850AA2-F0FA-48C5-A739-733A65A832A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB850AA2-F0FA-48C5-A739-733A65A832A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB850AA2-F0FA-48C5-A739-733A65A832A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB850AA2-F0FA-48C5-A739-733A65A832A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{689C0701-B70F-45DD-AE82-EF25DD041E0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{689C0701-B70F-45DD-AE82-EF25DD041E0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{689C0701-B70F-45DD-AE82-EF25DD041E0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{689C0701-B70F-45DD-AE82-EF25DD041E0E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

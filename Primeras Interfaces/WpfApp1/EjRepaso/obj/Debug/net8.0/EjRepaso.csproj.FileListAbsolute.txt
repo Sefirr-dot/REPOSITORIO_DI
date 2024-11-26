@@ -1,0 +1,15 @@
+C:\Users\Alumno\Desktop\Interfaces\REPOSITORIO_DI\Primeras Interfaces\WpfApp1\EjRepaso\bin\Debug\net8.0\EjRepaso.exe
+C:\Users\Alumno\Desktop\Interfaces\REPOSITORIO_DI\Primeras Interfaces\WpfApp1\EjRepaso\bin\Debug\net8.0\EjRepaso.deps.json
+C:\Users\Alumno\Desktop\Interfaces\REPOSITORIO_DI\Primeras Interfaces\WpfApp1\EjRepaso\bin\Debug\net8.0\EjRepaso.runtimeconfig.json
+C:\Users\Alumno\Desktop\Interfaces\REPOSITORIO_DI\Primeras Interfaces\WpfApp1\EjRepaso\bin\Debug\net8.0\EjRepaso.dll
+C:\Users\Alumno\Desktop\Interfaces\REPOSITORIO_DI\Primeras Interfaces\WpfApp1\EjRepaso\bin\Debug\net8.0\EjRepaso.pdb
+C:\Users\Alumno\Desktop\Interfaces\REPOSITORIO_DI\Primeras Interfaces\WpfApp1\EjRepaso\obj\Debug\net8.0\EjRepaso.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alumno\Desktop\Interfaces\REPOSITORIO_DI\Primeras Interfaces\WpfApp1\EjRepaso\obj\Debug\net8.0\EjRepaso.AssemblyInfoInputs.cache
+C:\Users\Alumno\Desktop\Interfaces\REPOSITORIO_DI\Primeras Interfaces\WpfApp1\EjRepaso\obj\Debug\net8.0\EjRepaso.AssemblyInfo.cs
+C:\Users\Alumno\Desktop\Interfaces\REPOSITORIO_DI\Primeras Interfaces\WpfApp1\EjRepaso\obj\Debug\net8.0\EjRepaso.csproj.CoreCompileInputs.cache
+C:\Users\Alumno\Desktop\Interfaces\REPOSITORIO_DI\Primeras Interfaces\WpfApp1\EjRepaso\obj\Debug\net8.0\EjRepaso.sourcelink.json
+C:\Users\Alumno\Desktop\Interfaces\REPOSITORIO_DI\Primeras Interfaces\WpfApp1\EjRepaso\obj\Debug\net8.0\EjRepaso.dll
+C:\Users\Alumno\Desktop\Interfaces\REPOSITORIO_DI\Primeras Interfaces\WpfApp1\EjRepaso\obj\Debug\net8.0\refint\EjRepaso.dll
+C:\Users\Alumno\Desktop\Interfaces\REPOSITORIO_DI\Primeras Interfaces\WpfApp1\EjRepaso\obj\Debug\net8.0\EjRepaso.pdb
+C:\Users\Alumno\Desktop\Interfaces\REPOSITORIO_DI\Primeras Interfaces\WpfApp1\EjRepaso\obj\Debug\net8.0\EjRepaso.genruntimeconfig.cache
+C:\Users\Alumno\Desktop\Interfaces\REPOSITORIO_DI\Primeras Interfaces\WpfApp1\EjRepaso\obj\Debug\net8.0\ref\EjRepaso.dll
