@@ -10,6 +10,8 @@ namespace EntityFramework
     public class AppDbContext : DbContext
     {
         public DbSet<Persona> personas { get; set; }
+
+        public DbSet<Mascota> mascotas { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseMySql("Server=localhost;Port=3307;Database=dbpersonas;Uid=root;Pwd=root;",
