@@ -53,7 +53,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Personajes1", "Personajes1\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EjRepaso", "EjRepaso\EjRepaso.csproj", "{AB850AA2-F0FA-48C5-A739-733A65A832A9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityFramework", "EntityFramework\EntityFramework.csproj", "{689C0701-B70F-45DD-AE82-EF25DD041E0E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EntityFramework", "EntityFramework\EntityFramework.csproj", "{689C0701-B70F-45DD-AE82-EF25DD041E0E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ViewModell", "ViewModell\ViewModell.csproj", "{1733182B-80CA-4706-8E74-E8C1D4DF42D6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppAdivinarNumero", "AppAdivinarNumero\AppAdivinarNumero.csproj", "{370500EE-BDA1-4E4E-874A-DE450F8702D3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Estilos", "Estilos\Estilos.csproj", "{EC31FF79-87CA-4CC6-9157-0CF81F1D72E3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -165,6 +171,18 @@ Global
 		{689C0701-B70F-45DD-AE82-EF25DD041E0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{689C0701-B70F-45DD-AE82-EF25DD041E0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{689C0701-B70F-45DD-AE82-EF25DD041E0E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1733182B-80CA-4706-8E74-E8C1D4DF42D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1733182B-80CA-4706-8E74-E8C1D4DF42D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1733182B-80CA-4706-8E74-E8C1D4DF42D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1733182B-80CA-4706-8E74-E8C1D4DF42D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{370500EE-BDA1-4E4E-874A-DE450F8702D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{370500EE-BDA1-4E4E-874A-DE450F8702D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{370500EE-BDA1-4E4E-874A-DE450F8702D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{370500EE-BDA1-4E4E-874A-DE450F8702D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC31FF79-87CA-4CC6-9157-0CF81F1D72E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC31FF79-87CA-4CC6-9157-0CF81F1D72E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC31FF79-87CA-4CC6-9157-0CF81F1D72E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC31FF79-87CA-4CC6-9157-0CF81F1D72E3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
