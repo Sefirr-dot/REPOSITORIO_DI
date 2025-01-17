@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSSResumen", "..\CSSResumen
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Plantillas", "..\Plantillas\Plantillas.csproj", "{AD9EC7CA-4276-4698-A780-8A834B9A36FA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrimerProgramaBonito", "..\PrimerProgramaBonito\PrimerProgramaBonito.csproj", "{51868927-A26E-473B-9A21-0CD3FEE2A6DD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PrimerProgramaBonito", "..\PrimerProgramaBonito\PrimerProgramaBonito.csproj", "{51868927-A26E-473B-9A21-0CD3FEE2A6DD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProyectoConjunto", "..\ProyectoConjunto\ProyectoConjunto.csproj", "{80440023-9FF8-42C0-9D58-2ED187082F93}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{51868927-A26E-473B-9A21-0CD3FEE2A6DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{51868927-A26E-473B-9A21-0CD3FEE2A6DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{51868927-A26E-473B-9A21-0CD3FEE2A6DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80440023-9FF8-42C0-9D58-2ED187082F93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80440023-9FF8-42C0-9D58-2ED187082F93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80440023-9FF8-42C0-9D58-2ED187082F93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80440023-9FF8-42C0-9D58-2ED187082F93}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

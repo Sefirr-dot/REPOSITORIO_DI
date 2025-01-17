@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CSSResumen")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+44236a34ad41f1a5da8ede2dfac0d4686ed54c72")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+159027af40da3b465e7b11eea5b1c7565cf304ab")]
 [assembly: System.Reflection.AssemblyProductAttribute("CSSResumen")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CSSResumen")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
