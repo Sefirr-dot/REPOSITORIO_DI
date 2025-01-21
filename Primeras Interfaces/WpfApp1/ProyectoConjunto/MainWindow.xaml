@@ -29,11 +29,14 @@
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="Button">
-                        <Grid>
-                            <Ellipse Fill="{TemplateBinding Background}"/>
-                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                        </Grid>
+                        <Border Background="{TemplateBinding Background}" 
+                         CornerRadius="20" 
+                         BorderBrush="#9AA6B2" 
+                         BorderThickness="1">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                        </Border>
                     </ControlTemplate>
+
                 </Setter.Value>
             </Setter>
             <Style.Triggers>
