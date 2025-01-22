@@ -19,3 +19,5 @@ C:\Users\Alumno\Desktop\Interfaces\REPOSITORIO_DI\Primeras Interfaces\WpfApp1\Pr
 C:\Users\Alumno\Desktop\Interfaces\REPOSITORIO_DI\Primeras Interfaces\WpfApp1\ProyectoConjunto\obj\Debug\net8.0-windows\ProyectoConjunto.pdb
 C:\Users\Alumno\Desktop\Interfaces\REPOSITORIO_DI\Primeras Interfaces\WpfApp1\ProyectoConjunto\obj\Debug\net8.0-windows\ProyectoConjunto.genruntimeconfig.cache
 C:\Users\Alumno\Desktop\Interfaces\REPOSITORIO_DI\Primeras Interfaces\WpfApp1\ProyectoConjunto\obj\Debug\net8.0-windows\ref\ProyectoConjunto.dll
+C:\Users\Alumno\Desktop\Interfaces\REPOSITORIO_DI\Primeras Interfaces\WpfApp1\ProyectoConjunto\obj\Debug\net8.0-windows\Ventana1.g.cs
+C:\Users\Alumno\Desktop\Interfaces\REPOSITORIO_DI\Primeras Interfaces\WpfApp1\ProyectoConjunto\obj\Debug\net8.0-windows\Ventana1.baml
