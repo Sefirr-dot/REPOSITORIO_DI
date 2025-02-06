@@ -3,22 +3,17 @@
   "WorkspaceRootPath": "C:\\Users\\Alumno\\Desktop\\Interfaces\\REPOSITORIO_DI\\Primeras Interfaces\\WpfApp1\\Estilos\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{80440023-9FF8-42C0-9D58-2ED187082F93}|..\\ProyectoConjunto\\ProyectoConjunto.csproj|c:\\users\\alumno\\desktop\\interfaces\\repositorio_di\\primeras interfaces\\wpfapp1\\proyectoconjunto\\ventana1.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{80440023-9FF8-42C0-9D58-2ED187082F93}|..\\ProyectoConjunto\\ProyectoConjunto.csproj|c:\\users\\alumno\\desktop\\interfaces\\repositorio_di\\primeras interfaces\\wpfapp1\\proyectoconjunto\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{80440023-9FF8-42C0-9D58-2ED187082F93}|..\\ProyectoConjunto\\ProyectoConjunto.csproj|c:\\users\\alumno\\desktop\\interfaces\\repositorio_di\\primeras interfaces\\wpfapp1\\proyectoconjunto\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{51868927-A26E-473B-9A21-0CD3FEE2A6DD}|..\\PrimerProgramaBonito\\PrimerProgramaBonito.csproj|c:\\users\\alumno\\desktop\\interfaces\\repositorio_di\\primeras interfaces\\wpfapp1\\primerprogramabonito\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{51868927-A26E-473B-9A21-0CD3FEE2A6DD}|..\\PrimerProgramaBonito\\PrimerProgramaBonito.csproj|c:\\users\\alumno\\desktop\\interfaces\\repositorio_di\\primeras interfaces\\wpfapp1\\primerprogramabonito\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AD9EC7CA-4276-4698-A780-8A834B9A36FA}|..\\Plantillas\\Plantillas.csproj|c:\\users\\alumno\\desktop\\interfaces\\repositorio_di\\primeras interfaces\\wpfapp1\\plantillas\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DB6E5B9-3DE7-419A-9C33-B51C6EDC659B}|Estilos.csproj|c:\\users\\alumno\\desktop\\interfaces\\repositorio_di\\primeras interfaces\\wpfapp1\\estilos\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{5DB6E5B9-3DE7-419A-9C33-B51C6EDC659B}|Estilos.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C980EA1B-B736-42CB-9DCF-F5C5683DD233}|..\\CSSResumen\\CSSResumen.csproj|c:\\users\\alumno\\desktop\\interfaces\\repositorio_di\\primeras interfaces\\wpfapp1\\cssresumen\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -28,77 +23,64 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Ventana1.xaml",
-              "DocumentMoniker": "C:\\Users\\Alumno\\Desktop\\Interfaces\\REPOSITORIO_DI\\Primeras Interfaces\\WpfApp1\\ProyectoConjunto\\Ventana1.xaml",
-              "RelativeDocumentMoniker": "..\\ProyectoConjunto\\Ventana1.xaml",
-              "ToolTip": "C:\\Users\\Alumno\\Desktop\\Interfaces\\REPOSITORIO_DI\\Primeras Interfaces\\WpfApp1\\ProyectoConjunto\\Ventana1.xaml*",
-              "RelativeToolTip": "..\\ProyectoConjunto\\Ventana1.xaml*",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-01-22T16:19:19.434Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\Alumno\\Desktop\\Interfaces\\REPOSITORIO_DI\\Primeras Interfaces\\WpfApp1\\ProyectoConjunto\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "..\\ProyectoConjunto\\MainWindow.xaml",
-              "ToolTip": "C:\\Users\\Alumno\\Desktop\\Interfaces\\REPOSITORIO_DI\\Primeras Interfaces\\WpfApp1\\ProyectoConjunto\\MainWindow.xaml*",
-              "RelativeToolTip": "..\\ProyectoConjunto\\MainWindow.xaml*",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-01-17T17:05:32.589Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Alumno\\Desktop\\Interfaces\\REPOSITORIO_DI\\Primeras Interfaces\\WpfApp1\\ProyectoConjunto\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "..\\ProyectoConjunto\\MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\Alumno\\Desktop\\Interfaces\\REPOSITORIO_DI\\Primeras Interfaces\\WpfApp1\\ProyectoConjunto\\MainWindow.xaml.cs",
-              "RelativeToolTip": "..\\ProyectoConjunto\\MainWindow.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-17T17:05:31.382Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\Alumno\\Desktop\\Interfaces\\REPOSITORIO_DI\\Primeras Interfaces\\WpfApp1\\PrimerProgramaBonito\\MainWindow.xaml",
               "RelativeDocumentMoniker": "..\\PrimerProgramaBonito\\MainWindow.xaml",
               "ToolTip": "C:\\Users\\Alumno\\Desktop\\Interfaces\\REPOSITORIO_DI\\Primeras Interfaces\\WpfApp1\\PrimerProgramaBonito\\MainWindow.xaml",
               "RelativeToolTip": "..\\PrimerProgramaBonito\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-01-13T19:41:08.063Z"
+              "WhenOpened": "2025-02-05T16:10:18.533Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Alumno\\Desktop\\Interfaces\\REPOSITORIO_DI\\Primeras Interfaces\\WpfApp1\\PrimerProgramaBonito\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "..\\PrimerProgramaBonito\\MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\Alumno\\Desktop\\Interfaces\\REPOSITORIO_DI\\Primeras Interfaces\\WpfApp1\\PrimerProgramaBonito\\MainWindow.xaml.cs",
-              "RelativeToolTip": "..\\PrimerProgramaBonito\\MainWindow.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-13T19:41:07.483Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\Alumno\\Desktop\\Interfaces\\REPOSITORIO_DI\\Primeras Interfaces\\WpfApp1\\Plantillas\\MainWindow.xaml",
               "RelativeDocumentMoniker": "..\\Plantillas\\MainWindow.xaml",
               "ToolTip": "C:\\Users\\Alumno\\Desktop\\Interfaces\\REPOSITORIO_DI\\Primeras Interfaces\\WpfApp1\\Plantillas\\MainWindow.xaml",
               "RelativeToolTip": "..\\Plantillas\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-01-09T15:28:04.304Z"
+              "WhenOpened": "2025-02-05T15:49:09.327Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\Alumno\\Desktop\\Interfaces\\REPOSITORIO_DI\\Primeras Interfaces\\WpfApp1\\Estilos\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "MainWindow.xaml",
+              "ToolTip": "C:\\Users\\Alumno\\Desktop\\Interfaces\\REPOSITORIO_DI\\Primeras Interfaces\\WpfApp1\\Estilos\\MainWindow.xaml",
+              "RelativeToolTip": "MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-02-05T15:48:56.131Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\Alumno\\Desktop\\Interfaces\\REPOSITORIO_DI\\Primeras Interfaces\\WpfApp1\\CSSResumen\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "..\\CSSResumen\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\Alumno\\Desktop\\Interfaces\\REPOSITORIO_DI\\Primeras Interfaces\\WpfApp1\\CSSResumen\\MainWindow.xaml",
+              "RelativeToolTip": "..\\CSSResumen\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-02-05T15:48:47.515Z"
             }
           ]
         }

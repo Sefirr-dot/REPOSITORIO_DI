@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Plantillas")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d7d2007a180feca82a60b8895a85b54e4806322c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+41ea469b3a888663b3a42d2d7cea1fe3ae7176ea")]
 [assembly: System.Reflection.AssemblyProductAttribute("Plantillas")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Plantillas")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

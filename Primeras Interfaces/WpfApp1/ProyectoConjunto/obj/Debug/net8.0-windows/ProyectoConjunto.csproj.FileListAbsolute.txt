@@ -3,11 +3,9 @@ C:\Users\Alumno\Desktop\Interfaces\REPOSITORIO_DI\Primeras Interfaces\WpfApp1\Pr
 C:\Users\Alumno\Desktop\Interfaces\REPOSITORIO_DI\Primeras Interfaces\WpfApp1\ProyectoConjunto\bin\Debug\net8.0-windows\ProyectoConjunto.runtimeconfig.json
 C:\Users\Alumno\Desktop\Interfaces\REPOSITORIO_DI\Primeras Interfaces\WpfApp1\ProyectoConjunto\bin\Debug\net8.0-windows\ProyectoConjunto.dll
 C:\Users\Alumno\Desktop\Interfaces\REPOSITORIO_DI\Primeras Interfaces\WpfApp1\ProyectoConjunto\bin\Debug\net8.0-windows\ProyectoConjunto.pdb
-C:\Users\Alumno\Desktop\Interfaces\REPOSITORIO_DI\Primeras Interfaces\WpfApp1\ProyectoConjunto\obj\Debug\net8.0-windows\MainWindow.g.cs
 C:\Users\Alumno\Desktop\Interfaces\REPOSITORIO_DI\Primeras Interfaces\WpfApp1\ProyectoConjunto\obj\Debug\net8.0-windows\App.g.cs
 C:\Users\Alumno\Desktop\Interfaces\REPOSITORIO_DI\Primeras Interfaces\WpfApp1\ProyectoConjunto\obj\Debug\net8.0-windows\ProyectoConjunto_MarkupCompile.cache
 C:\Users\Alumno\Desktop\Interfaces\REPOSITORIO_DI\Primeras Interfaces\WpfApp1\ProyectoConjunto\obj\Debug\net8.0-windows\ProyectoConjunto_MarkupCompile.lref
-C:\Users\Alumno\Desktop\Interfaces\REPOSITORIO_DI\Primeras Interfaces\WpfApp1\ProyectoConjunto\obj\Debug\net8.0-windows\MainWindow.baml
 C:\Users\Alumno\Desktop\Interfaces\REPOSITORIO_DI\Primeras Interfaces\WpfApp1\ProyectoConjunto\obj\Debug\net8.0-windows\ProyectoConjunto.g.resources
 C:\Users\Alumno\Desktop\Interfaces\REPOSITORIO_DI\Primeras Interfaces\WpfApp1\ProyectoConjunto\obj\Debug\net8.0-windows\ProyectoConjunto.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Alumno\Desktop\Interfaces\REPOSITORIO_DI\Primeras Interfaces\WpfApp1\ProyectoConjunto\obj\Debug\net8.0-windows\ProyectoConjunto.AssemblyInfoInputs.cache
@@ -19,5 +17,7 @@ C:\Users\Alumno\Desktop\Interfaces\REPOSITORIO_DI\Primeras Interfaces\WpfApp1\Pr
 C:\Users\Alumno\Desktop\Interfaces\REPOSITORIO_DI\Primeras Interfaces\WpfApp1\ProyectoConjunto\obj\Debug\net8.0-windows\ProyectoConjunto.pdb
 C:\Users\Alumno\Desktop\Interfaces\REPOSITORIO_DI\Primeras Interfaces\WpfApp1\ProyectoConjunto\obj\Debug\net8.0-windows\ProyectoConjunto.genruntimeconfig.cache
 C:\Users\Alumno\Desktop\Interfaces\REPOSITORIO_DI\Primeras Interfaces\WpfApp1\ProyectoConjunto\obj\Debug\net8.0-windows\ref\ProyectoConjunto.dll
-C:\Users\Alumno\Desktop\Interfaces\REPOSITORIO_DI\Primeras Interfaces\WpfApp1\ProyectoConjunto\obj\Debug\net8.0-windows\Ventana1.g.cs
-C:\Users\Alumno\Desktop\Interfaces\REPOSITORIO_DI\Primeras Interfaces\WpfApp1\ProyectoConjunto\obj\Debug\net8.0-windows\Ventana1.baml
+C:\Users\Alumno\Desktop\Interfaces\REPOSITORIO_DI\Primeras Interfaces\WpfApp1\ProyectoConjunto\obj\Debug\net8.0-windows\VentanaValoracionesReceta.baml
+C:\Users\Alumno\Desktop\Interfaces\REPOSITORIO_DI\Primeras Interfaces\WpfApp1\ProyectoConjunto\obj\Debug\net8.0-windows\VentanaPasosReceta.g.cs
+C:\Users\Alumno\Desktop\Interfaces\REPOSITORIO_DI\Primeras Interfaces\WpfApp1\ProyectoConjunto\obj\Debug\net8.0-windows\VentanaValoracionesReceta.g.cs
+C:\Users\Alumno\Desktop\Interfaces\REPOSITORIO_DI\Primeras Interfaces\WpfApp1\ProyectoConjunto\obj\Debug\net8.0-windows\VentanaPasosReceta.baml

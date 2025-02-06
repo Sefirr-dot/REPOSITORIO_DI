@@ -1,0 +1,41 @@
+C:\Users\fanki\source\repos\PracticaExamen\PracticaExamen\bin\Debug\net8.0-windows\PracticaExamen.exe
+C:\Users\fanki\source\repos\PracticaExamen\PracticaExamen\bin\Debug\net8.0-windows\PracticaExamen.deps.json
+C:\Users\fanki\source\repos\PracticaExamen\PracticaExamen\bin\Debug\net8.0-windows\PracticaExamen.runtimeconfig.json
+C:\Users\fanki\source\repos\PracticaExamen\PracticaExamen\bin\Debug\net8.0-windows\PracticaExamen.dll
+C:\Users\fanki\source\repos\PracticaExamen\PracticaExamen\bin\Debug\net8.0-windows\PracticaExamen.pdb
+C:\Users\fanki\source\repos\PracticaExamen\PracticaExamen\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\fanki\source\repos\PracticaExamen\PracticaExamen\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\fanki\source\repos\PracticaExamen\PracticaExamen\obj\Debug\net8.0-windows\PracticaExamen_MarkupCompile.cache
+C:\Users\fanki\source\repos\PracticaExamen\PracticaExamen\obj\Debug\net8.0-windows\PracticaExamen_MarkupCompile.lref
+C:\Users\fanki\source\repos\PracticaExamen\PracticaExamen\obj\Debug\net8.0-windows\MainWindow.baml
+C:\Users\fanki\source\repos\PracticaExamen\PracticaExamen\obj\Debug\net8.0-windows\PracticaExamen.g.resources
+C:\Users\fanki\source\repos\PracticaExamen\PracticaExamen\obj\Debug\net8.0-windows\PracticaExamen.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\fanki\source\repos\PracticaExamen\PracticaExamen\obj\Debug\net8.0-windows\PracticaExamen.AssemblyInfoInputs.cache
+C:\Users\fanki\source\repos\PracticaExamen\PracticaExamen\obj\Debug\net8.0-windows\PracticaExamen.AssemblyInfo.cs
+C:\Users\fanki\source\repos\PracticaExamen\PracticaExamen\obj\Debug\net8.0-windows\PracticaExamen.csproj.CoreCompileInputs.cache
+C:\Users\fanki\source\repos\PracticaExamen\PracticaExamen\obj\Debug\net8.0-windows\PracticaExamen.dll
+C:\Users\fanki\source\repos\PracticaExamen\PracticaExamen\obj\Debug\net8.0-windows\refint\PracticaExamen.dll
+C:\Users\fanki\source\repos\PracticaExamen\PracticaExamen\obj\Debug\net8.0-windows\PracticaExamen.pdb
+C:\Users\fanki\source\repos\PracticaExamen\PracticaExamen\obj\Debug\net8.0-windows\PracticaExamen.genruntimeconfig.cache
+C:\Users\fanki\source\repos\PracticaExamen\PracticaExamen\obj\Debug\net8.0-windows\ref\PracticaExamen.dll
+C:\Users\Alumno\Desktop\Interfaces\REPOSITORIO_DI\Primeras Interfaces\WpfApp1\PracticaExamen\PracticaExamen\bin\Debug\net8.0-windows\PracticaExamen.exe
+C:\Users\Alumno\Desktop\Interfaces\REPOSITORIO_DI\Primeras Interfaces\WpfApp1\PracticaExamen\PracticaExamen\bin\Debug\net8.0-windows\PracticaExamen.deps.json
+C:\Users\Alumno\Desktop\Interfaces\REPOSITORIO_DI\Primeras Interfaces\WpfApp1\PracticaExamen\PracticaExamen\bin\Debug\net8.0-windows\PracticaExamen.runtimeconfig.json
+C:\Users\Alumno\Desktop\Interfaces\REPOSITORIO_DI\Primeras Interfaces\WpfApp1\PracticaExamen\PracticaExamen\bin\Debug\net8.0-windows\PracticaExamen.dll
+C:\Users\Alumno\Desktop\Interfaces\REPOSITORIO_DI\Primeras Interfaces\WpfApp1\PracticaExamen\PracticaExamen\bin\Debug\net8.0-windows\PracticaExamen.pdb
+C:\Users\Alumno\Desktop\Interfaces\REPOSITORIO_DI\Primeras Interfaces\WpfApp1\PracticaExamen\PracticaExamen\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\Alumno\Desktop\Interfaces\REPOSITORIO_DI\Primeras Interfaces\WpfApp1\PracticaExamen\PracticaExamen\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\Alumno\Desktop\Interfaces\REPOSITORIO_DI\Primeras Interfaces\WpfApp1\PracticaExamen\PracticaExamen\obj\Debug\net8.0-windows\PracticaExamen_MarkupCompile.cache
+C:\Users\Alumno\Desktop\Interfaces\REPOSITORIO_DI\Primeras Interfaces\WpfApp1\PracticaExamen\PracticaExamen\obj\Debug\net8.0-windows\PracticaExamen_MarkupCompile.lref
+C:\Users\Alumno\Desktop\Interfaces\REPOSITORIO_DI\Primeras Interfaces\WpfApp1\PracticaExamen\PracticaExamen\obj\Debug\net8.0-windows\MainWindow.baml
+C:\Users\Alumno\Desktop\Interfaces\REPOSITORIO_DI\Primeras Interfaces\WpfApp1\PracticaExamen\PracticaExamen\obj\Debug\net8.0-windows\PracticaExamen.g.resources
+C:\Users\Alumno\Desktop\Interfaces\REPOSITORIO_DI\Primeras Interfaces\WpfApp1\PracticaExamen\PracticaExamen\obj\Debug\net8.0-windows\PracticaExamen.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alumno\Desktop\Interfaces\REPOSITORIO_DI\Primeras Interfaces\WpfApp1\PracticaExamen\PracticaExamen\obj\Debug\net8.0-windows\PracticaExamen.AssemblyInfoInputs.cache
+C:\Users\Alumno\Desktop\Interfaces\REPOSITORIO_DI\Primeras Interfaces\WpfApp1\PracticaExamen\PracticaExamen\obj\Debug\net8.0-windows\PracticaExamen.AssemblyInfo.cs
+C:\Users\Alumno\Desktop\Interfaces\REPOSITORIO_DI\Primeras Interfaces\WpfApp1\PracticaExamen\PracticaExamen\obj\Debug\net8.0-windows\PracticaExamen.csproj.CoreCompileInputs.cache
+C:\Users\Alumno\Desktop\Interfaces\REPOSITORIO_DI\Primeras Interfaces\WpfApp1\PracticaExamen\PracticaExamen\obj\Debug\net8.0-windows\PracticaExamen.sourcelink.json
+C:\Users\Alumno\Desktop\Interfaces\REPOSITORIO_DI\Primeras Interfaces\WpfApp1\PracticaExamen\PracticaExamen\obj\Debug\net8.0-windows\PracticaExamen.dll
+C:\Users\Alumno\Desktop\Interfaces\REPOSITORIO_DI\Primeras Interfaces\WpfApp1\PracticaExamen\PracticaExamen\obj\Debug\net8.0-windows\refint\PracticaExamen.dll
+C:\Users\Alumno\Desktop\Interfaces\REPOSITORIO_DI\Primeras Interfaces\WpfApp1\PracticaExamen\PracticaExamen\obj\Debug\net8.0-windows\PracticaExamen.pdb
+C:\Users\Alumno\Desktop\Interfaces\REPOSITORIO_DI\Primeras Interfaces\WpfApp1\PracticaExamen\PracticaExamen\obj\Debug\net8.0-windows\PracticaExamen.genruntimeconfig.cache
+C:\Users\Alumno\Desktop\Interfaces\REPOSITORIO_DI\Primeras Interfaces\WpfApp1\PracticaExamen\PracticaExamen\obj\Debug\net8.0-windows\ref\PracticaExamen.dll

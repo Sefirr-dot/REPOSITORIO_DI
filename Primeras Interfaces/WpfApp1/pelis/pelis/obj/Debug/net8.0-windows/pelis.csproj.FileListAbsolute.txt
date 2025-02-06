@@ -1,0 +1,51 @@
+C:\Users\Trabajo\source\repos\pelis\pelis\bin\Debug\net8.0-windows\pelis.exe
+C:\Users\Trabajo\source\repos\pelis\pelis\bin\Debug\net8.0-windows\pelis.deps.json
+C:\Users\Trabajo\source\repos\pelis\pelis\bin\Debug\net8.0-windows\pelis.runtimeconfig.json
+C:\Users\Trabajo\source\repos\pelis\pelis\bin\Debug\net8.0-windows\pelis.dll
+C:\Users\Trabajo\source\repos\pelis\pelis\bin\Debug\net8.0-windows\pelis.pdb
+C:\Users\Trabajo\source\repos\pelis\pelis\bin\Debug\net8.0-windows\System.Net.Http.Formatting.dll
+C:\Users\Trabajo\source\repos\pelis\pelis\bin\Debug\net8.0-windows\Newtonsoft.Json.dll
+C:\Users\Trabajo\source\repos\pelis\pelis\bin\Debug\net8.0-windows\Newtonsoft.Json.Bson.dll
+C:\Users\Trabajo\source\repos\pelis\pelis\obj\Debug\net8.0-windows\pelis.csproj.AssemblyReference.cache
+C:\Users\Trabajo\source\repos\pelis\pelis\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\Trabajo\source\repos\pelis\pelis\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\Trabajo\source\repos\pelis\pelis\obj\Debug\net8.0-windows\pelis_MarkupCompile.cache
+C:\Users\Trabajo\source\repos\pelis\pelis\obj\Debug\net8.0-windows\pelis_MarkupCompile.lref
+C:\Users\Trabajo\source\repos\pelis\pelis\obj\Debug\net8.0-windows\MainWindow.baml
+C:\Users\Trabajo\source\repos\pelis\pelis\obj\Debug\net8.0-windows\pelis.g.resources
+C:\Users\Trabajo\source\repos\pelis\pelis\obj\Debug\net8.0-windows\pelis.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Trabajo\source\repos\pelis\pelis\obj\Debug\net8.0-windows\pelis.AssemblyInfoInputs.cache
+C:\Users\Trabajo\source\repos\pelis\pelis\obj\Debug\net8.0-windows\pelis.AssemblyInfo.cs
+C:\Users\Trabajo\source\repos\pelis\pelis\obj\Debug\net8.0-windows\pelis.csproj.CoreCompileInputs.cache
+C:\Users\Trabajo\source\repos\pelis\pelis\obj\Debug\net8.0-windows\pelis.csproj.CopyComplete
+C:\Users\Trabajo\source\repos\pelis\pelis\obj\Debug\net8.0-windows\pelis.dll
+C:\Users\Trabajo\source\repos\pelis\pelis\obj\Debug\net8.0-windows\refint\pelis.dll
+C:\Users\Trabajo\source\repos\pelis\pelis\obj\Debug\net8.0-windows\pelis.pdb
+C:\Users\Trabajo\source\repos\pelis\pelis\obj\Debug\net8.0-windows\pelis.genruntimeconfig.cache
+C:\Users\Trabajo\source\repos\pelis\pelis\obj\Debug\net8.0-windows\ref\pelis.dll
+C:\Users\Alumno\Desktop\Interfaces\REPOSITORIO_DI\Primeras Interfaces\WpfApp1\pelis\pelis\bin\Debug\net8.0-windows\pelis.exe
+C:\Users\Alumno\Desktop\Interfaces\REPOSITORIO_DI\Primeras Interfaces\WpfApp1\pelis\pelis\bin\Debug\net8.0-windows\pelis.deps.json
+C:\Users\Alumno\Desktop\Interfaces\REPOSITORIO_DI\Primeras Interfaces\WpfApp1\pelis\pelis\bin\Debug\net8.0-windows\pelis.runtimeconfig.json
+C:\Users\Alumno\Desktop\Interfaces\REPOSITORIO_DI\Primeras Interfaces\WpfApp1\pelis\pelis\bin\Debug\net8.0-windows\pelis.dll
+C:\Users\Alumno\Desktop\Interfaces\REPOSITORIO_DI\Primeras Interfaces\WpfApp1\pelis\pelis\bin\Debug\net8.0-windows\pelis.pdb
+C:\Users\Alumno\Desktop\Interfaces\REPOSITORIO_DI\Primeras Interfaces\WpfApp1\pelis\pelis\bin\Debug\net8.0-windows\System.Net.Http.Formatting.dll
+C:\Users\Alumno\Desktop\Interfaces\REPOSITORIO_DI\Primeras Interfaces\WpfApp1\pelis\pelis\bin\Debug\net8.0-windows\Newtonsoft.Json.dll
+C:\Users\Alumno\Desktop\Interfaces\REPOSITORIO_DI\Primeras Interfaces\WpfApp1\pelis\pelis\bin\Debug\net8.0-windows\Newtonsoft.Json.Bson.dll
+C:\Users\Alumno\Desktop\Interfaces\REPOSITORIO_DI\Primeras Interfaces\WpfApp1\pelis\pelis\obj\Debug\net8.0-windows\pelis.csproj.AssemblyReference.cache
+C:\Users\Alumno\Desktop\Interfaces\REPOSITORIO_DI\Primeras Interfaces\WpfApp1\pelis\pelis\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\Alumno\Desktop\Interfaces\REPOSITORIO_DI\Primeras Interfaces\WpfApp1\pelis\pelis\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\Alumno\Desktop\Interfaces\REPOSITORIO_DI\Primeras Interfaces\WpfApp1\pelis\pelis\obj\Debug\net8.0-windows\pelis_MarkupCompile.cache
+C:\Users\Alumno\Desktop\Interfaces\REPOSITORIO_DI\Primeras Interfaces\WpfApp1\pelis\pelis\obj\Debug\net8.0-windows\pelis_MarkupCompile.lref
+C:\Users\Alumno\Desktop\Interfaces\REPOSITORIO_DI\Primeras Interfaces\WpfApp1\pelis\pelis\obj\Debug\net8.0-windows\MainWindow.baml
+C:\Users\Alumno\Desktop\Interfaces\REPOSITORIO_DI\Primeras Interfaces\WpfApp1\pelis\pelis\obj\Debug\net8.0-windows\pelis.g.resources
+C:\Users\Alumno\Desktop\Interfaces\REPOSITORIO_DI\Primeras Interfaces\WpfApp1\pelis\pelis\obj\Debug\net8.0-windows\pelis.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alumno\Desktop\Interfaces\REPOSITORIO_DI\Primeras Interfaces\WpfApp1\pelis\pelis\obj\Debug\net8.0-windows\pelis.AssemblyInfoInputs.cache
+C:\Users\Alumno\Desktop\Interfaces\REPOSITORIO_DI\Primeras Interfaces\WpfApp1\pelis\pelis\obj\Debug\net8.0-windows\pelis.AssemblyInfo.cs
+C:\Users\Alumno\Desktop\Interfaces\REPOSITORIO_DI\Primeras Interfaces\WpfApp1\pelis\pelis\obj\Debug\net8.0-windows\pelis.csproj.CoreCompileInputs.cache
+C:\Users\Alumno\Desktop\Interfaces\REPOSITORIO_DI\Primeras Interfaces\WpfApp1\pelis\pelis\obj\Debug\net8.0-windows\pelis.sourcelink.json
+C:\Users\Alumno\Desktop\Interfaces\REPOSITORIO_DI\Primeras Interfaces\WpfApp1\pelis\pelis\obj\Debug\net8.0-windows\pelis.csproj.Up2Date
+C:\Users\Alumno\Desktop\Interfaces\REPOSITORIO_DI\Primeras Interfaces\WpfApp1\pelis\pelis\obj\Debug\net8.0-windows\pelis.dll
+C:\Users\Alumno\Desktop\Interfaces\REPOSITORIO_DI\Primeras Interfaces\WpfApp1\pelis\pelis\obj\Debug\net8.0-windows\refint\pelis.dll
+C:\Users\Alumno\Desktop\Interfaces\REPOSITORIO_DI\Primeras Interfaces\WpfApp1\pelis\pelis\obj\Debug\net8.0-windows\pelis.pdb
+C:\Users\Alumno\Desktop\Interfaces\REPOSITORIO_DI\Primeras Interfaces\WpfApp1\pelis\pelis\obj\Debug\net8.0-windows\pelis.genruntimeconfig.cache
+C:\Users\Alumno\Desktop\Interfaces\REPOSITORIO_DI\Primeras Interfaces\WpfApp1\pelis\pelis\obj\Debug\net8.0-windows\ref\pelis.dll
